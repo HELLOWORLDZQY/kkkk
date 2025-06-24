@@ -1,0 +1,2617 @@
+-- Decompiled with the Synapse X Luau decompiler.
+-- USED GLOBALS: script, SpinSans.
+[003] :001:GETIMPORT      v1 = require
+[005] :001:GETIMPORT      v5 = game
+[007] :001:GETTABLEKS     v4 = v5.ReplicatedStorage
+[009] :001:GETTABLEKS     v3 = v4.Module
+[011] :001:GETTABLEKS     v2 = v3.Spawn
+[012] :001:CALL           v1 = v1(v2)
+[014] :001:GETTABLEKS     v0 = v1.Spawn
+[016] :002:GETIMPORT      v2 = require
+[018] :002:GETIMPORT      v6 = game
+[020] :002:GETTABLEKS     v5 = v6.ReplicatedStorage
+[022] :002:GETTABLEKS     v4 = v5.Module
+[024] :002:GETTABLEKS     v3 = v4.MaxSacrifice
+[025] :002:CALL           v2 = v2(v3)
+[027] :002:GETTABLEKS     v1 = v2.SacrificeList
+[029] :003:GETIMPORT      v2 = task.wait
+[030] :003:CALL           v2()
+[032] :003:GETIMPORT      v4 = game
+[034] :003:GETTABLEKS     v3 = v4.Players
+[036] :003:GETTABLEKS     v2 = v3.LocalPlayer
+[037] :003:LOADK          v4 = "leaderstats"
+[038] :003:LOADN          v5 = 50
+[041] :003:CALL           v2 = v2:WaitForChild(v4, v5)
+[042] :003:JUMPIFNOT      if v2 then -- goto #83
+[044] :003:GETIMPORT      v4 = game
+[046] :003:GETTABLEKS     v3 = v4.Players
+[048] :003:GETTABLEKS     v2 = v3.LocalPlayer
+[049] :003:LOADK          v4 = "Storage"
+[050] :003:LOADN          v5 = 50
+[053] :003:CALL           v2 = v2:WaitForChild(v4, v5)
+[054] :003:JUMPIFNOT      if v2 then -- goto #83
+[056] :003:GETIMPORT      v5 = game
+[058] :003:GETTABLEKS     v4 = v5.Players
+[060] :003:GETTABLEKS     v3 = v4.LocalPlayer
+[061] :003:LOADK          v5 = "Storage"
+[062] :003:LOADN          v6 = 50
+[065] :003:CALL           v3 = v3:WaitForChild(v5, v6)
+[068] :003:CALL           v3 = v3:GetChildren()
+[069] :003:LENGTH         v2 = #v3
+[070] :003:LENGTH         v3 = #v0
+[072] :003:JUMPIFNOTLE    if v3 <= v2 then -- goto #84
+[074] :003:GETIMPORT      v4 = game
+[076] :003:GETTABLEKS     v3 = v4.Players
+[078] :003:GETTABLEKS     v2 = v3.LocalPlayer
+[079] :003:LOADK          v4 = "SacrificeStore"
+[082] :003:CALL           v2 = v2:FindFirstChild(v4)
+end
+end
+[083] :003:JUMPIF         if not v2 then -- goto #84
+end
+end
+[084] :003:JUMPBACK       -- jump back to #28
+[086] :004:GETIMPORT      v2 = pcall
+[087] :004:DUPCLOSURE     v3 = function()
+-- proto pool id: 4
+-- num upvalues: 1
+-- num inner protos: 4
+-- size instructions: 229
+-- size constants: 40
+-- lineinfo gap: 24
+-- max stack size: 14
+-- is typed: false
+[001] :005:LOADN          v2 = 1
+[002] :005:GETUPVAL       v3 = u_v0
+[003] :005:LENGTH         v0 = #v3
+[004] :005:LOADN          v1 = 1
+[005] :005:FORNPREP       for v2 = v2, v0, v1 do -- end at #228
+[007] :006:GETIMPORT      v4 = script
+[009] :006:GETTABLEKS     v3 = v4.Thing
+[012] :006:CALL           v3 = v3:Clone()
+[013] :007:GETUPVAL       v6 = u_v0
+[014] :007:GETTABLE       v5 = v6[v2]
+[016] :007:GETTABLEKS     v4 = v5.Name
+[018] :007:SETTABLEKS     v3.Name = v4
+[020] :008:GETTABLEKS     v4 = v3.Number
+[022] :008:SETTABLEKS     v4.Value = v2
+[024] :009:GETIMPORT      v7 = game
+[026] :009:GETTABLEKS     v6 = v7.Players
+[028] :009:GETTABLEKS     v5 = v6.LocalPlayer
+[029] :009:LOADK          v7 = "Storage"
+[032] :009:CALL           v5 = v5:FindFirstChild(v7)
+[033] :009:GETUPVAL       v9 = u_v0
+[035] :009:GETTABLEKS     v11 = v3.Number
+[037] :009:GETTABLEKS     v10 = v11.Value
+[038] :009:GETTABLE       v8 = v9[v10]
+[040] :009:GETTABLEKS     v7 = v8.Name
+[043] :009:CALL           v5 = v5:FindFirstChild(v7)
+[045] :009:GETTABLEKS     v4 = v5.Value
+[046] :009:LOADN          v5 = 2
+[048] :009:JUMPIFNOTLE    if v5 <= v4 then -- goto #54
+[050] :010:GETTABLEKS     v4 = v3.ImageLabel
+[051] :010:LOADB          v5 = false
+[053] :010:SETTABLEKS     v4.Visible = v5
+end
+[055] :012:GETTABLEKS     v6 = v3.ViewportFrame
+[057] :012:GETTABLEKS     v5 = v6.UIStroke
+[059] :012:GETTABLEKS     v4 = v5.UIGradient
+[061] :012:GETIMPORT      v8 = game
+[062] :012:LOADK          v10 = "ReplicatedStorage"
+[065] :012:CALL           v8 = v8:GetService(v10)
+[067] :012:GETTABLEKS     v7 = v8.Viewport
+[068] :012:GETUPVAL       v11 = u_v0
+[070] :012:GETTABLEKS     v13 = v3.Number
+[072] :012:GETTABLEKS     v12 = v13.Value
+[073] :012:GETTABLE       v10 = v11[v12]
+[075] :012:GETTABLEKS     v9 = v10.Name
+[078] :012:CALL           v7 = v7:FindFirstChild(v9)
+[080] :012:GETTABLEKS     v6 = v7.Gui
+[082] :012:GETTABLEKS     v5 = v6.Gradient
+[083] :012:LOADK          v7 = "Gradient"
+[086] :012:CALL           v5 = v5:GetAttribute(v7)
+[088] :012:SETTABLEKS     v4.Color = v5
+[090] :013:GETIMPORT      v5 = game
+[091] :013:LOADK          v7 = "ReplicatedStorage"
+[094] :013:CALL           v5 = v5:GetService(v7)
+[096] :013:GETTABLEKS     v4 = v5.Viewport
+[097] :013:GETUPVAL       v8 = u_v0
+[098] :013:GETTABLE       v7 = v8[v2]
+[100] :013:GETTABLEKS     v6 = v7.Name
+[103] :013:CALL           v4 = v4:FindFirstChild(v6)
+[106] :013:CALL           v4 = v4:Clone()
+[108] :013:GETTABLEKS     v5 = v3.ViewportFrame
+[110] :013:SETTABLEKS     v4.Parent = v5
+[112] :014:GETIMPORT      v5 = script
+[114] :014:GETTABLEKS     v4 = v5.AutoWeld
+[117] :014:CALL           v4 = v4:Clone()
+[119] :015:GETTABLEKS     v6 = v3.ViewportFrame
+[120] :015:LOADK          v8 = "Model"
+[123] :015:CALL           v6 = v6:FindFirstChildOfClass(v8)
+[125] :015:GETTABLEKS     v5 = v6.ClickHitbox
+[127] :015:SETTABLEKS     v4.Parent = v5
+[128] :016:LOADB          v5 = true
+[130] :016:SETTABLEKS     v4.Enabled = v5
+[132] :017:GETIMPORT      v8 = script
+[134] :017:GETTABLEKS     v7 = v8.Parent
+[136] :017:GETTABLEKS     v6 = v7.EntireFrame
+[138] :017:GETTABLEKS     v5 = v6.Scroll
+[139] :017:GETUPVAL       v9 = u_v0
+[140] :017:GETTABLE       v8 = v9[v2]
+[142] :017:GETTABLEKS     v7 = v8.Type
+[145] :017:CALL           v5 = v5:FindFirstChild(v7)
+[147] :017:SETTABLEKS     v3.Parent = v5
+[149] :018:GETIMPORT      v7 = game
+[150] :018:LOADK          v9 = "ReplicatedStorage"
+[153] :018:CALL           v7 = v7:GetService(v9)
+[155] :018:GETTABLEKS     v6 = v7.Viewport
+[156] :018:GETUPVAL       v10 = u_v0
+[158] :018:GETTABLEKS     v12 = v3.Number
+[160] :018:GETTABLEKS     v11 = v12.Value
+[161] :018:GETTABLE       v9 = v10[v11]
+[163] :018:GETTABLEKS     v8 = v9.Name
+[166] :018:CALL           v6 = v6:FindFirstChild(v8)
+[168] :018:GETTABLEKS     v5 = v6.Gui
+[170] :019:GETTABLEKS     v6 = v3.MouseButton1Click
+[171] :019:NEWCLOSURE     v8 = function()
+-- proto pool id: 0
+-- num upvalues: 3
+-- num inner protos: 0
+-- size instructions: 431
+-- size constants: 61
+-- lineinfo gap: 24
+-- max stack size: 9
+-- is typed: false
+[002] :020:GETIMPORT      v2 = game
+[004] :020:GETTABLEKS     v1 = v2.Players
+[006] :020:GETTABLEKS     v0 = v1.LocalPlayer
+[007] :020:LOADK          v2 = "Storage"
+[008] :020:LOADN          v3 = 50
+[011] :020:CALL           v0 = v0:WaitForChild(v2, v3)
+[012] :020:JUMPIFNOT      if v0 then -- goto #47
+[014] :020:GETIMPORT      v3 = game
+[016] :020:GETTABLEKS     v2 = v3.Players
+[018] :020:GETTABLEKS     v1 = v2.LocalPlayer
+[019] :020:LOADK          v3 = "Storage"
+[022] :020:CALL           v1 = v1:FindFirstChild(v3)
+[023] :020:GETUPVAL       v5 = u_v0
+[024] :020:GETUPVAL       v8 = u_v3
+[026] :020:GETTABLEKS     v7 = v8.Number
+[028] :020:GETTABLEKS     v6 = v7.Value
+[029] :020:GETTABLE       v4 = v5[v6]
+[031] :020:GETTABLEKS     v3 = v4.Name
+[034] :020:CALL           v1 = v1:FindFirstChild(v3)
+[036] :020:GETTABLEKS     v0 = v1.Value
+[037] :020:LOADN          v1 = 2
+[039] :020:JUMPIFNOTLT    if v0 < v1 then -- goto #48
+[041] :021:GETIMPORT      v1 = script
+[043] :021:GETTABLEKS     v0 = v1.RemoteEvent
+[046] :021:CALL           v0:FireServer()
+end
+[047] :022:RETURN         return
+end
+[049] :024:GETIMPORT      v0 = pairs
+[051] :024:GETIMPORT      v4 = script
+[053] :024:GETTABLEKS     v3 = v4.Parent
+[055] :024:GETTABLEKS     v2 = v3.EntireFrame
+[057] :024:GETTABLEKS     v1 = v2.Scroll
+[060] :024:CALL           ... = v1:GetChildren()
+[061] :024:CALL           v0, v1, v2 = v0(...)
+[062] :024:FORGPREP_NEXT  for v3, v4 in pairs(v1) do -- could be doing next, t
+[063] :025:LOADK          v7 = "ScrollingFrame"
+[066] :025:CALL           v5 = v5:IsA(v7)
+[067] :025:JUMPIFNOT      if v5 then -- goto #74
+[069] :026:GETIMPORT      v5 = UDim2.fromScale
+[070] :026:LOADK          v6 = 0.295
+[071] :026:LOADK          v7 = 0.63
+[072] :026:CALL           v5 = v5(v6, v7)
+[074] :026:SETTABLEKS     v4.Size = v5
+[076] :024:FORGLOOP       end -- iterate + jump to #63
+[078] :029:GETIMPORT      v4 = script
+[080] :029:GETTABLEKS     v3 = v4.Parent
+[082] :029:GETTABLEKS     v2 = v3.EntireFrame
+[084] :029:GETTABLEKS     v1 = v2.Stats
+[086] :029:GETTABLEKS     v0 = v1.ViewSans
+[087] :029:LOADK          v2 = "Model"
+[090] :029:CALL           v0 = v0:FindFirstChildOfClass(v2)
+[091] :029:JUMPIFNOT      if v0 then -- goto #108
+[093] :030:GETIMPORT      v4 = script
+[095] :030:GETTABLEKS     v3 = v4.Parent
+[097] :030:GETTABLEKS     v2 = v3.EntireFrame
+[099] :030:GETTABLEKS     v1 = v2.Stats
+[101] :030:GETTABLEKS     v0 = v1.ViewSans
+[102] :030:LOADK          v2 = "Model"
+[105] :030:CALL           v0 = v0:FindFirstChildOfClass(v2)
+[108] :030:CALL           v0:Destroy()
+[110] :032:GETIMPORT      v0 = pairs
+[112] :032:GETIMPORT      v4 = script
+[114] :032:GETTABLEKS     v3 = v4.Parent
+[116] :032:GETTABLEKS     v2 = v3.EntireFrame
+[118] :032:GETTABLEKS     v1 = v2.Stats
+[121] :032:CALL           ... = v1:GetChildren()
+[122] :032:CALL           v0, v1, v2 = v0(...)
+[123] :032:FORGPREP_NEXT  for v3, v4 in pairs(v1) do -- could be doing next, t
+[124] :033:LOADK          v7 = "TextLabel"
+[127] :033:CALL           v5 = v5:IsA(v7)
+[128] :033:JUMPIFNOT      if v5 then -- goto #243
+[129] :034:GETUPVAL       v7 = u_v5
+[131] :034:GETTABLEKS     v6 = v7.Text
+[133] :034:GETTABLEKS     v5 = v6.Value
+[135] :034:SETTABLEKS     v4.TextColor3 = v5
+[136] :035:GETUPVAL       v7 = u_v5
+[138] :035:GETTABLEKS     v6 = v7.Stroke
+[140] :035:GETTABLEKS     v5 = v6.Value
+[142] :035:SETTABLEKS     v4.TextStrokeColor3 = v5
+[144] :036:GETTABLEKS     v5 = v4.UIStroke
+[145] :036:GETUPVAL       v8 = u_v5
+[147] :036:GETTABLEKS     v7 = v8.Text
+[149] :036:GETTABLEKS     v6 = v7.Value
+[151] :036:SETTABLEKS     v5.Color = v6
+[153] :037:GETTABLEKS     v6 = v4.UIStroke
+[155] :037:GETTABLEKS     v5 = v6.UIGradient
+[156] :037:GETUPVAL       v7 = u_v5
+[158] :037:GETTABLEKS     v6 = v7.Gradient
+[159] :037:LOADK          v8 = "Gradient"
+[162] :037:CALL           v6 = v6:GetAttribute(v8)
+[164] :037:SETTABLEKS     v5.Color = v6
+[166] :038:GETTABLEKS     v6 = v4.UIStroke
+[168] :038:GETTABLEKS     v5 = v6.UIGradient
+[169] :038:GETUPVAL       v7 = u_v5
+[171] :038:GETTABLEKS     v6 = v7.Gradient
+[172] :038:LOADK          v8 = "Rotation"
+[175] :038:CALL           v6 = v6:GetAttribute(v8)
+[177] :038:SETTABLEKS     v5.Rotation = v6
+[179] :039:GETTABLEKS     v5 = v4.UIGradient
+[180] :039:GETUPVAL       v7 = u_v5
+[182] :039:GETTABLEKS     v6 = v7.Gradient
+[183] :039:LOADK          v8 = "Gradient"
+[186] :039:CALL           v6 = v6:GetAttribute(v8)
+[188] :039:SETTABLEKS     v5.Color = v6
+[190] :040:GETTABLEKS     v5 = v4.UIGradient
+[191] :040:GETUPVAL       v7 = u_v5
+[193] :040:GETTABLEKS     v6 = v7.Gradient
+[194] :040:LOADK          v8 = "Rotation"
+[197] :040:CALL           v6 = v6:GetAttribute(v8)
+[199] :040:SETTABLEKS     v5.Rotation = v6
+[200] :041:GETUPVAL       v6 = u_v5
+[202] :041:GETTABLEKS     v5 = v6.Font
+[203] :041:LOADK          v7 = "Font"
+[206] :041:CALL           v5 = v5:GetAttribute(v7)
+[208] :041:SETTABLEKS     v4.FontFace = v5
+[210] :042:GETTABLEKS     v5 = v4.UIStroke
+[211] :042:GETUPVAL       v8 = u_v5
+[213] :042:GETTABLEKS     v7 = v8.Text
+[215] :042:GETTABLEKS     v6 = v7.Value
+[217] :042:SETTABLEKS     v5.Color = v6
+[219] :043:GETTABLEKS     v6 = v4.UIStroke
+[221] :043:GETTABLEKS     v5 = v6.UIGradient
+[222] :043:GETUPVAL       v7 = u_v5
+[224] :043:GETTABLEKS     v6 = v7.Gradient
+[225] :043:LOADK          v8 = "Gradient"
+[228] :043:CALL           v6 = v6:GetAttribute(v8)
+[230] :043:SETTABLEKS     v5.Color = v6
+[232] :044:GETTABLEKS     v6 = v4.UIStroke
+[234] :044:GETTABLEKS     v5 = v6.UIGradient
+[235] :044:GETUPVAL       v7 = u_v5
+[237] :044:GETTABLEKS     v6 = v7.Gradient
+[238] :044:LOADK          v8 = "Rotation"
+[241] :044:CALL           v6 = v6:GetAttribute(v8)
+[243] :044:SETTABLEKS     v5.Rotation = v6
+[244] :046:LOADK          v7 = "ViewportFrame"
+[247] :046:CALL           v5 = v5:IsA(v7)
+[248] :046:JUMPIFNOT      if v5 then -- goto #283
+[250] :047:GETTABLEKS     v5 = v4.UIStroke
+[251] :047:GETUPVAL       v8 = u_v5
+[253] :047:GETTABLEKS     v7 = v8.Text
+[255] :047:GETTABLEKS     v6 = v7.Value
+[257] :047:SETTABLEKS     v5.Color = v6
+[259] :048:GETTABLEKS     v6 = v4.UIStroke
+[261] :048:GETTABLEKS     v5 = v6.UIGradient
+[262] :048:GETUPVAL       v7 = u_v5
+[264] :048:GETTABLEKS     v6 = v7.Gradient
+[265] :048:LOADK          v8 = "Gradient"
+[268] :048:CALL           v6 = v6:GetAttribute(v8)
+[270] :048:SETTABLEKS     v5.Color = v6
+[272] :049:GETTABLEKS     v6 = v4.UIStroke
+[274] :049:GETTABLEKS     v5 = v6.UIGradient
+[275] :049:GETUPVAL       v7 = u_v5
+[277] :049:GETTABLEKS     v6 = v7.Gradient
+[278] :049:LOADK          v8 = "Rotation"
+[281] :049:CALL           v6 = v6:GetAttribute(v8)
+[283] :049:SETTABLEKS     v5.Rotation = v6
+[285] :032:FORGLOOP       end -- iterate + jump to #124
+[287] :052:GETIMPORT      v3 = script
+[289] :052:GETTABLEKS     v2 = v3.Parent
+[291] :052:GETTABLEKS     v1 = v2.EntireFrame
+[293] :052:GETTABLEKS     v0 = v1.ButtonSelect
+[294] :052:GETUPVAL       v1 = u_v3
+[296] :052:SETTABLEKS     v0.Value = v1
+[298] :053:GETIMPORT      v3 = script
+[300] :053:GETTABLEKS     v2 = v3.Parent
+[302] :053:GETTABLEKS     v1 = v2.EntireFrame
+[304] :053:GETTABLEKS     v0 = v1.Stats
+[305] :053:LOADB          v1 = true
+[307] :053:SETTABLEKS     v0.Visible = v1
+[309] :054:GETIMPORT      v4 = script
+[311] :054:GETTABLEKS     v3 = v4.Parent
+[313] :054:GETTABLEKS     v2 = v3.EntireFrame
+[315] :054:GETTABLEKS     v1 = v2.Stats
+[317] :054:GETTABLEKS     v0 = v1.AlterPoint
+[318] :054:LOADK          v2 = "Alter Points : "
+[319] :054:GETUPVAL       v5 = u_v0
+[320] :054:GETUPVAL       v8 = u_v3
+[322] :054:GETTABLEKS     v7 = v8.Number
+[324] :054:GETTABLEKS     v6 = v7.Value
+[325] :054:GETTABLE       v4 = v5[v6]
+[327] :054:GETTABLEKS     v3 = v4.AlterPoint
+[328] :054:CONCAT         v1 = v2 .. v3
+[330] :054:SETTABLEKS     v0.Text = v1
+[332] :055:GETIMPORT      v4 = script
+[334] :055:GETTABLEKS     v3 = v4.Parent
+[336] :055:GETTABLEKS     v2 = v3.EntireFrame
+[338] :055:GETTABLEKS     v1 = v2.Stats
+[340] :055:GETTABLEKS     v0 = v1.Types
+[341] :055:GETUPVAL       v3 = u_v0
+[342] :055:GETUPVAL       v6 = u_v3
+[344] :055:GETTABLEKS     v5 = v6.Number
+[346] :055:GETTABLEKS     v4 = v5.Value
+[347] :055:GETTABLE       v2 = v3[v4]
+[349] :055:GETTABLEKS     v1 = v2.Type
+[351] :055:SETTABLEKS     v0.Text = v1
+[353] :056:GETIMPORT      v4 = script
+[355] :056:GETTABLEKS     v3 = v4.Parent
+[357] :056:GETTABLEKS     v2 = v3.EntireFrame
+[359] :056:GETTABLEKS     v1 = v2.Stats
+[361] :056:GETTABLEKS     v0 = v1.Rarity
+[362] :056:LOADK          v2 = "1/"
+[363] :056:GETUPVAL       v5 = u_v0
+[364] :056:GETUPVAL       v8 = u_v3
+[366] :056:GETTABLEKS     v7 = v8.Number
+[368] :056:GETTABLEKS     v6 = v7.Value
+[369] :056:GETTABLE       v4 = v5[v6]
+[371] :056:GETTABLEKS     v3 = v4.Chance
+[372] :056:CONCAT         v1 = v2 .. v3
+[374] :056:SETTABLEKS     v0.Text = v1
+[376] :057:GETIMPORT      v4 = script
+[378] :057:GETTABLEKS     v3 = v4.Parent
+[380] :057:GETTABLEKS     v2 = v3.EntireFrame
+[382] :057:GETTABLEKS     v1 = v2.Stats
+[384] :057:GETTABLEKS     v0 = v1.SansName
+[385] :057:GETUPVAL       v3 = u_v0
+[386] :057:GETUPVAL       v6 = u_v3
+[388] :057:GETTABLEKS     v5 = v6.Number
+[390] :057:GETTABLEKS     v4 = v5.Value
+[391] :057:GETTABLE       v2 = v3[v4]
+[393] :057:GETTABLEKS     v1 = v2.Name
+[395] :057:SETTABLEKS     v0.Text = v1
+[397] :058:GETIMPORT      v1 = game
+[398] :058:LOADK          v3 = "ReplicatedStorage"
+[401] :058:CALL           v1 = v1:GetService(v3)
+[403] :058:GETTABLEKS     v0 = v1.Viewport
+[404] :058:GETUPVAL       v4 = u_v0
+[405] :058:GETUPVAL       v7 = u_v3
+[407] :058:GETTABLEKS     v6 = v7.Number
+[409] :058:GETTABLEKS     v5 = v6.Value
+[410] :058:GETTABLE       v3 = v4[v5]
+[412] :058:GETTABLEKS     v2 = v3.Name
+[415] :058:CALL           v0 = v0:FindFirstChild(v2)
+[418] :058:CALL           v0 = v0:Clone()
+[420] :058:GETIMPORT      v5 = script
+[422] :058:GETTABLEKS     v4 = v5.Parent
+[424] :058:GETTABLEKS     v3 = v4.EntireFrame
+[426] :058:GETTABLEKS     v2 = v3.Stats
+[428] :058:GETTABLEKS     v1 = v2.ViewSans
+[430] :058:SETTABLEKS     v0.Parent = v1
+[431] :059:RETURN         return
+end
+[177] :019:CALL           v6:Connect(v8)
+[179] :060:GETTABLEKS     v6 = v3.Size
+[181] :062:GETTABLEKS     v7 = v3.MouseEnter
+[182] :062:NEWCLOSURE     v9 = function()
+-- proto pool id: 1
+-- num upvalues: 3
+-- num inner protos: 0
+-- size instructions: 225
+-- size constants: 41
+-- lineinfo gap: 24
+-- max stack size: 10
+-- is typed: false
+[002] :063:GETIMPORT      v1 = script
+[004] :063:GETTABLEKS     v0 = v1.sans
+[005] :063:GETUPVAL       v3 = u_v0
+[006] :063:GETUPVAL       v6 = u_v3
+[008] :063:GETTABLEKS     v5 = v6.Number
+[010] :063:GETTABLEKS     v4 = v5.Value
+[011] :063:GETTABLE       v2 = v3[v4]
+[013] :063:GETTABLEKS     v1 = v2.PlayBack
+[015] :063:SETTABLEKS     v0.PlaybackSpeed = v1
+[017] :064:GETIMPORT      v2 = script
+[019] :064:GETTABLEKS     v1 = v2.sans
+[021] :064:GETTABLEKS     v0 = v1.DistortionSoundEffect
+[022] :064:GETUPVAL       v4 = u_v0
+[023] :064:GETUPVAL       v7 = u_v3
+[025] :064:GETTABLEKS     v6 = v7.Number
+[027] :064:GETTABLEKS     v5 = v6.Value
+[028] :064:GETTABLE       v3 = v4[v5]
+[030] :064:GETTABLEKS     v2 = v3.Distort
+[031] :064:GETTABLEN      v1 = v2[1]
+[033] :064:SETTABLEKS     v0.Enabled = v1
+[035] :065:GETIMPORT      v2 = script
+[037] :065:GETTABLEKS     v1 = v2.sans
+[039] :065:GETTABLEKS     v0 = v1.PitchShiftSoundEffect
+[040] :065:GETUPVAL       v4 = u_v0
+[041] :065:GETUPVAL       v7 = u_v3
+[043] :065:GETTABLEKS     v6 = v7.Number
+[045] :065:GETTABLEKS     v5 = v6.Value
+[046] :065:GETTABLE       v3 = v4[v5]
+[048] :065:GETTABLEKS     v2 = v3.Pitch
+[049] :065:GETTABLEN      v1 = v2[1]
+[051] :065:SETTABLEKS     v0.Enabled = v1
+[052] :066:GETUPVAL       v3 = u_v0
+[053] :066:GETUPVAL       v6 = u_v3
+[055] :066:GETTABLEKS     v5 = v6.Number
+[057] :066:GETTABLEKS     v4 = v5.Value
+[058] :066:GETTABLE       v2 = v3[v4]
+[060] :066:GETTABLEKS     v1 = v2.Distort
+[061] :066:GETTABLEN      v0 = v1[1]
+[062] :066:JUMPIFNOT      if v0 then -- goto #94
+[064] :067:GETIMPORT      v1 = script
+[066] :067:GETTABLEKS     v0 = v1.sans
+[067] :067:GETUPVAL       v4 = u_v0
+[068] :067:GETUPVAL       v7 = u_v3
+[070] :067:GETTABLEKS     v6 = v7.Number
+[072] :067:GETTABLEKS     v5 = v6.Value
+[073] :067:GETTABLE       v3 = v4[v5]
+[075] :067:GETTABLEKS     v2 = v3.Distort
+[076] :067:GETTABLEN      v1 = v2[2]
+[078] :067:SETTABLEKS     v0.PitchShiftSoundEffect = v1
+[080] :068:GETIMPORT      v1 = script
+[082] :068:GETTABLEKS     v0 = v1.sans
+[083] :068:GETUPVAL       v4 = u_v0
+[084] :068:GETUPVAL       v7 = u_v3
+[086] :068:GETTABLEKS     v6 = v7.Number
+[088] :068:GETTABLEKS     v5 = v6.Value
+[089] :068:GETTABLE       v3 = v4[v5]
+[091] :068:GETTABLEKS     v2 = v3.Distort
+[092] :068:GETTABLEN      v1 = v2[3]
+[094] :068:SETTABLEKS     v0.PitchShiftSoundEffect = v1
+[095] :070:GETUPVAL       v3 = u_v0
+[096] :070:GETUPVAL       v6 = u_v3
+[098] :070:GETTABLEKS     v5 = v6.Number
+[100] :070:GETTABLEKS     v4 = v5.Value
+[101] :070:GETTABLE       v2 = v3[v4]
+[103] :070:GETTABLEKS     v1 = v2.Pitch
+[104] :070:GETTABLEN      v0 = v1[1]
+[105] :070:JUMPIFNOT      if v0 then -- goto #137
+[107] :071:GETIMPORT      v1 = script
+[109] :071:GETTABLEKS     v0 = v1.sans
+[110] :071:GETUPVAL       v4 = u_v0
+[111] :071:GETUPVAL       v7 = u_v3
+[113] :071:GETTABLEKS     v6 = v7.Number
+[115] :071:GETTABLEKS     v5 = v6.Value
+[116] :071:GETTABLE       v3 = v4[v5]
+[118] :071:GETTABLEKS     v2 = v3.Pitch
+[119] :071:GETTABLEN      v1 = v2[2]
+[121] :071:SETTABLEKS     v0.PitchShiftSoundEffect = v1
+[123] :072:GETIMPORT      v1 = script
+[125] :072:GETTABLEKS     v0 = v1.sans
+[126] :072:GETUPVAL       v4 = u_v0
+[127] :072:GETUPVAL       v7 = u_v3
+[129] :072:GETTABLEKS     v6 = v7.Number
+[131] :072:GETTABLEKS     v5 = v6.Value
+[132] :072:GETTABLE       v3 = v4[v5]
+[134] :072:GETTABLEKS     v2 = v3.Pitch
+[135] :072:GETTABLEN      v1 = v2[3]
+[137] :072:SETTABLEKS     v0.PitchShiftSoundEffect = v1
+[139] :074:GETIMPORT      v1 = script
+[141] :074:GETTABLEKS     v0 = v1.sans
+[142] :074:GETUPVAL       v3 = u_v0
+[143] :074:GETUPVAL       v6 = u_v3
+[145] :074:GETTABLEKS     v5 = v6.Number
+[147] :074:GETTABLEKS     v4 = v5.Value
+[148] :074:GETTABLE       v2 = v3[v4]
+[150] :074:GETTABLEKS     v1 = v2.SoundId
+[152] :074:SETTABLEKS     v0.SoundId = v1
+[154] :075:GETIMPORT      v1 = script
+[156] :075:GETTABLEKS     v0 = v1.sans
+[159] :075:CALL           v0:Play()
+[160] :076:GETUPVAL       v0 = u_v3
+[161] :076:GETUPVAL       v3 = u_v6
+[163] :076:GETIMPORT      v4 = UDim2.fromScale
+[164] :076:GETUPVAL       v8 = u_v6
+[166] :076:GETTABLEKS     v7 = v8.X
+[168] :076:GETTABLEKS     v6 = v7.Scale
+[169] :076:MULK           v5 = v6 * 0.1
+[170] :076:GETUPVAL       v9 = u_v6
+[172] :076:GETTABLEKS     v8 = v9.Y
+[174] :076:GETTABLEKS     v7 = v8.Scale
+[175] :076:MULK           v6 = v7 * 0.1
+[176] :076:CALL           v4 = v4(v5, v6)
+[177] :076:ADD            v2 = v3 + v4
+[178] :076:LOADK          v3 = "Out"
+[179] :076:LOADK          v4 = "Quart"
+[180] :076:LOADK          v5 = 0.8
+[181] :076:LOADB          v6 = true
+[184] :076:CALL           v0:TweenSize(v2, v3, v4, v5, v6)
+[185] :077:GETUPVAL       v3 = u_v3
+[187] :077:GETTABLEKS     v2 = v3.ViewportFrame
+[189] :077:GETTABLEKS     v1 = v2.UIStroke
+[191] :077:GETTABLEKS     v0 = v1.UIGradient
+[192] :077:LOADB          v1 = false
+[194] :077:SETTABLEKS     v0.Enabled = v1
+[196] :078:GETIMPORT      v0 = game
+[197] :078:LOADK          v2 = "TweenService"
+[200] :078:CALL           v0 = v0:GetService(v2)
+[201] :078:GETUPVAL       v4 = u_v3
+[203] :078:GETTABLEKS     v3 = v4.ViewportFrame
+[205] :078:GETTABLEKS     v2 = v3.UIStroke
+[207] :078:GETIMPORT      v3 = TweenInfo.new
+[208] :078:LOADK          v4 = 0.8
+[209] :078:CALL           v3 = v3(v4)
+[210] :078:DUPTABLE       v4 = {} -- {"Color"}
+[212] :078:GETIMPORT      v5 = Color3.fromRGB
+[213] :078:LOADN          v6 = 255
+[214] :078:LOADN          v7 = 255
+[215] :078:LOADN          v8 = 0
+[216] :078:CALL           v5 = v5(v6, v7, v8)
+[218] :078:SETTABLEKS     v4.Color = v5
+[221] :078:CALL           v0 = v0:Create(v2, v3, v4)
+[224] :078:CALL           v0:Play()
+[225] :079:RETURN         return
+end
+[188] :062:CALL           v7:Connect(v9)
+[190] :080:GETTABLEKS     v7 = v3.MouseLeave
+[191] :080:NEWCLOSURE     v9 = function()
+-- proto pool id: 2
+-- num upvalues: 2
+-- num inner protos: 0
+-- size instructions: 62
+-- size constants: 28
+-- lineinfo gap: 24
+-- max stack size: 9
+-- is typed: false
+[001] :081:GETUPVAL       v0 = u_v3
+[003] :081:GETIMPORT      v2 = UDim2.fromScale
+[004] :081:GETUPVAL       v5 = u_v6
+[006] :081:GETTABLEKS     v4 = v5.X
+[008] :081:GETTABLEKS     v3 = v4.Scale
+[009] :081:GETUPVAL       v6 = u_v6
+[011] :081:GETTABLEKS     v5 = v6.Y
+[013] :081:GETTABLEKS     v4 = v5.Scale
+[014] :081:CALL           v2 = v2(v3, v4)
+[015] :081:LOADK          v3 = "Out"
+[016] :081:LOADK          v4 = "Quart"
+[017] :081:LOADK          v5 = 0.8
+[018] :081:LOADB          v6 = true
+[021] :081:CALL           v0:TweenSize(v2, v3, v4, v5, v6)
+[022] :082:GETUPVAL       v3 = u_v3
+[024] :082:GETTABLEKS     v2 = v3.ViewportFrame
+[026] :082:GETTABLEKS     v1 = v2.UIStroke
+[028] :082:GETTABLEKS     v0 = v1.UIGradient
+[029] :082:LOADB          v1 = true
+[031] :082:SETTABLEKS     v0.Enabled = v1
+[033] :083:GETIMPORT      v0 = game
+[034] :083:LOADK          v2 = "TweenService"
+[037] :083:CALL           v0 = v0:GetService(v2)
+[038] :083:GETUPVAL       v4 = u_v3
+[040] :083:GETTABLEKS     v3 = v4.ViewportFrame
+[042] :083:GETTABLEKS     v2 = v3.UIStroke
+[044] :083:GETIMPORT      v3 = TweenInfo.new
+[045] :083:LOADK          v4 = 0.8
+[046] :083:CALL           v3 = v3(v4)
+[047] :083:DUPTABLE       v4 = {} -- {"Color"}
+[049] :083:GETIMPORT      v5 = Color3.fromRGB
+[050] :083:LOADN          v6 = 220
+[051] :083:LOADN          v7 = 220
+[052] :083:LOADN          v8 = 220
+[053] :083:CALL           v5 = v5(v6, v7, v8)
+[055] :083:SETTABLEKS     v4.Color = v5
+[058] :083:CALL           v0 = v0:Create(v2, v3, v4)
+[061] :083:CALL           v0:Play()
+[062] :084:RETURN         return
+end
+[196] :080:CALL           v7:Connect(v9)
+[198] :085:GETIMPORT      v9 = game
+[200] :085:GETTABLEKS     v8 = v9.Players
+[202] :085:GETTABLEKS     v7 = v8.LocalPlayer
+[203] :085:LOADK          v9 = "Storage"
+[206] :085:CALL           v7 = v7:FindFirstChild(v9)
+[207] :085:GETUPVAL       v11 = u_v0
+[209] :085:GETTABLEKS     v13 = v3.Number
+[211] :085:GETTABLEKS     v12 = v13.Value
+[212] :085:GETTABLE       v10 = v11[v12]
+[214] :085:GETTABLEKS     v9 = v10.Name
+[217] :085:CALL           v7 = v7:FindFirstChild(v9)
+[218] :085:LOADK          v9 = "Value"
+[221] :085:CALL           v7 = v7:GetPropertyChangedSignal(v9)
+[222] :085:NEWCLOSURE     v9 = function()
+-- proto pool id: 3
+-- num upvalues: 2
+-- num inner protos: 0
+-- size instructions: 53
+-- size constants: 12
+-- lineinfo gap: 24
+-- max stack size: 9
+-- is typed: false
+[002] :086:GETIMPORT      v2 = game
+[004] :086:GETTABLEKS     v1 = v2.Players
+[006] :086:GETTABLEKS     v0 = v1.LocalPlayer
+[007] :086:LOADK          v2 = "Storage"
+[008] :086:LOADN          v3 = 50
+[011] :086:CALL           v0 = v0:WaitForChild(v2, v3)
+[012] :086:JUMPIFNOT      if v0 then -- goto #46
+[014] :086:GETIMPORT      v3 = game
+[016] :086:GETTABLEKS     v2 = v3.Players
+[018] :086:GETTABLEKS     v1 = v2.LocalPlayer
+[019] :086:LOADK          v3 = "Storage"
+[022] :086:CALL           v1 = v1:FindFirstChild(v3)
+[023] :086:GETUPVAL       v5 = u_v0
+[024] :086:GETUPVAL       v8 = u_v3
+[026] :086:GETTABLEKS     v7 = v8.Number
+[028] :086:GETTABLEKS     v6 = v7.Value
+[029] :086:GETTABLE       v4 = v5[v6]
+[031] :086:GETTABLEKS     v3 = v4.Name
+[034] :086:CALL           v1 = v1:FindFirstChild(v3)
+[036] :086:GETTABLEKS     v0 = v1.Value
+[037] :086:LOADN          v1 = 2
+[039] :086:JUMPIFNOTLT    if v0 < v1 then -- goto #47
+[040] :087:GETUPVAL       v1 = u_v3
+[042] :087:GETTABLEKS     v0 = v1.ImageLabel
+[043] :087:LOADB          v1 = true
+[045] :087:SETTABLEKS     v0.Visible = v1
+end
+[046] :088:RETURN         return
+end
+[047] :090:GETUPVAL       v1 = u_v3
+[049] :090:GETTABLEKS     v0 = v1.ImageLabel
+[050] :090:LOADB          v1 = false
+[052] :090:SETTABLEKS     v0.Visible = v1
+[053] :091:RETURN         return
+end
+[227] :085:CALL           v7:Connect(v9)
+[228] :005:FORNLOOP       end -- iterate + jump to #5
+[229] :093:RETURN         return
+end
+[089] :004:CALL           v2(v3)
+[090] :095:DUPCLOSURE     
+local function SpinSans()
+-- proto pool id: 12
+-- num upvalues: 0
+-- num inner protos: 1
+-- size instructions: 5
+-- size constants: 3
+-- lineinfo gap: 24
+-- max stack size: 2
+-- is typed: false
+[002] :096:GETIMPORT      v0 = pcall
+[003] :096:DUPCLOSURE     v1 = function()
+-- proto pool id: 11
+-- num upvalues: 0
+-- num inner protos: 3
+-- size instructions: 67
+-- size constants: 18
+-- lineinfo gap: 24
+-- max stack size: 9
+-- is typed: false
+[001] :097:LOADNIL        v0 = nil
+[002] :097:LOADNIL        v1 = nil
+[004] :098:GETIMPORT      v6 = script
+[006] :098:GETTABLEKS     v5 = v6.Parent
+[008] :098:GETTABLEKS     v4 = v5.EntireFrame
+[010] :098:GETTABLEKS     v3 = v4.Stats
+[012] :098:GETTABLEKS     v2 = v3.ViewSans
+[013] :098:LOADK          v4 = "Model"
+[016] :098:CALL           v2 = v2:FindFirstChildOfClass(v4)
+[017] :098:JUMPIFNOT      if v2 then -- goto #30
+[019] :099:GETIMPORT      v3 = game
+[020] :099:LOADK          v5 = "RunService"
+[023] :099:CALL           v3 = v3:GetService(v5)
+[025] :099:GETTABLEKS     v2 = v3.Heartbeat
+[026] :099:DUPCLOSURE     v4 = function(p1)
+-- proto pool id: 6
+-- num upvalues: 0
+-- num inner protos: 1
+-- size instructions: 6
+-- size constants: 2
+-- lineinfo gap: 24
+-- max stack size: 3
+-- is typed: false
+[002] :100:GETIMPORT      v0 = pcall
+[003] :100:NEWCLOSURE     v1 = function()
+-- proto pool id: 5
+-- num upvalues: 1
+-- num inner protos: 0
+-- size instructions: 68
+-- size constants: 18
+-- lineinfo gap: 24
+-- max stack size: 17
+-- is typed: false
+[002] :101:GETIMPORT      v4 = script
+[004] :101:GETTABLEKS     v3 = v4.Parent
+[006] :101:GETTABLEKS     v2 = v3.EntireFrame
+[008] :101:GETTABLEKS     v1 = v2.Stats
+[010] :101:GETTABLEKS     v0 = v1.ViewSans
+[011] :101:LOADK          v2 = "Model"
+[014] :101:CALL           v0 = v0:FindFirstChildOfClass(v2)
+[016] :101:GETIMPORT      v9 = script
+[018] :101:GETTABLEKS     v8 = v9.Parent
+[020] :101:GETTABLEKS     v7 = v8.EntireFrame
+[022] :101:GETTABLEKS     v6 = v7.Stats
+[024] :101:GETTABLEKS     v5 = v6.ViewSans
+[025] :101:LOADK          v7 = "Model"
+[028] :101:CALL           v5 = v5:FindFirstChildOfClass(v7)
+[030] :101:GETTABLEKS     v4 = v5.ClickHitbox
+[032] :101:GETTABLEKS     v3 = v4.CFrame
+[034] :101:GETIMPORT      v4 = CFrame.Angles
+[035] :101:LOADN          v5 = 0
+[036] :101:GETUPVAL       v8 = u_v0
+[038] :101:GETIMPORT      v16 = script
+[040] :101:GETTABLEKS     v15 = v16.Parent
+[042] :101:GETTABLEKS     v14 = v15.EntireFrame
+[044] :101:GETTABLEKS     v13 = v14.Stats
+[046] :101:GETTABLEKS     v12 = v13.ViewSans
+[047] :101:LOADK          v14 = "Model"
+[050] :101:CALL           v12 = v12:FindFirstChildOfClass(v14)
+[052] :101:GETTABLEKS     v11 = v12.Stats
+[054] :101:GETTABLEKS     v10 = v11.SpinSpeed
+[056] :101:GETTABLEKS     v9 = v10.Value
+[057] :101:MUL            v7 = v8 * v9
+[060] :101:GETIMPORT      v6 = math.rad
+[061] :101:CALL           v6 = v6(v7)
+[062] :101:LOADN          v7 = 0
+[063] :101:CALL           v4 = v4(v5, v6, v7)
+[064] :101:MUL            v2 = v3 * v4
+[067] :101:CALL           v0:SetPrimaryPartCFrame(v2)
+[068] :102:RETURN         return
+end
+[005] :100:CALL           v0(v1)
+[006] :103:RETURN         return
+end
+[029] :099:CALL           v2 = v2:Connect(v4)
+end
+[030] :099:MOVE           v0 = v2
+[032] :105:GETIMPORT      v7 = script
+[034] :105:GETTABLEKS     v6 = v7.Parent
+[036] :105:GETTABLEKS     v5 = v6.EntireFrame
+[038] :105:GETTABLEKS     v4 = v5.Stats
+[040] :105:GETTABLEKS     v3 = v4.ViewSans
+[042] :105:GETTABLEKS     v2 = v3.ChildAdded
+[043] :105:NEWCLOSURE     v4 = function(p2)
+-- proto pool id: 9
+-- num upvalues: 1
+-- num inner protos: 1
+-- size instructions: 15
+-- size constants: 6
+-- lineinfo gap: 24
+-- max stack size: 5
+-- is typed: false
+[002] :106:GETIMPORT      v1 = game
+[003] :106:LOADK          v3 = "RunService"
+[006] :106:CALL           v1 = v1:GetService(v3)
+[008] :106:GETTABLEKS     v0 = v1.Heartbeat
+[009] :106:NEWCLOSURE     v2 = function(p3)
+-- proto pool id: 8
+-- num upvalues: 1
+-- num inner protos: 1
+-- size instructions: 7
+-- size constants: 2
+-- lineinfo gap: 24
+-- max stack size: 3
+-- is typed: false
+[002] :107:GETIMPORT      v0 = pcall
+[003] :107:NEWCLOSURE     v1 = function()
+-- proto pool id: 7
+-- num upvalues: 2
+-- num inner protos: 0
+-- size instructions: 29
+-- size constants: 11
+-- lineinfo gap: 24
+-- max stack size: 13
+-- is typed: false
+[001] :108:GETUPVAL       v0 = u_v0
+[002] :108:GETUPVAL       v5 = u_v0
+[004] :108:GETTABLEKS     v4 = v5.ClickHitbox
+[006] :108:GETTABLEKS     v3 = v4.CFrame
+[008] :108:GETIMPORT      v4 = CFrame.Angles
+[009] :108:LOADN          v5 = 0
+[010] :108:GETUPVAL       v8 = u_v0
+[011] :108:GETUPVAL       v12 = u_v0
+[013] :108:GETTABLEKS     v11 = v12.Stats
+[015] :108:GETTABLEKS     v10 = v11.SpinSpeed
+[017] :108:GETTABLEKS     v9 = v10.Value
+[018] :108:MUL            v7 = v8 * v9
+[021] :108:GETIMPORT      v6 = math.rad
+[022] :108:CALL           v6 = v6(v7)
+[023] :108:LOADN          v7 = 0
+[024] :108:CALL           v4 = v4(v5, v6, v7)
+[025] :108:MUL            v2 = v3 * v4
+[028] :108:CALL           v0:SetPrimaryPartCFrame(v2)
+[029] :109:RETURN         return
+end
+[006] :107:CALL           v0(v1)
+[007] :110:RETURN         return
+end
+[013] :106:CALL           v0 = v0:Connect(v2)
+[014] :106:SETUPVAL       u_v0 = v0
+[015] :111:RETURN         return
+end
+[047] :105:CALL           v2 = v2:Connect(v4)
+[049] :112:GETIMPORT      v8 = script
+[051] :112:GETTABLEKS     v7 = v8.Parent
+[053] :112:GETTABLEKS     v6 = v7.EntireFrame
+[055] :112:GETTABLEKS     v5 = v6.Stats
+[057] :112:GETTABLEKS     v4 = v5.ViewSans
+[059] :112:GETTABLEKS     v3 = v4.ChildRemoved
+[060] :112:NEWCLOSURE     v5 = function()
+-- proto pool id: 10
+-- num upvalues: 2
+-- num inner protos: 0
+-- size instructions: 16
+-- size constants: 2
+-- lineinfo gap: 24
+-- max stack size: 2
+-- is typed: false
+[001] :113:GETUPVAL       v0 = u_v0
+[002] :113:JUMPIFNOT      if v0 then -- goto #6
+[003] :113:GETUPVAL       v0 = u_v0
+[006] :113:CALL           v0:Disconnect()
+[007] :114:GETUPVAL       v0 = u_v2
+[008] :114:JUMPIFNOT      if v0 then -- goto #12
+[009] :114:GETUPVAL       v0 = u_v2
+[012] :114:CALL           v0:Disconnect()
+[014] :115:GETGLOBAL      v0 = SpinSans
+[015] :115:CALL           v0()
+[016] :116:RETURN         return
+end
+[065] :112:CALL           v3:Once(v5)
+[067] :117:RETURN         return
+end
+[004] :096:CALL           v0(v1)
+[005] :118:RETURN         return
+end
+v2 = SpinSans
+[092] :095:SETGLOBAL      SpinSans = v2
+[094] :119:GETGLOBAL      v2 = SpinSans
+[095] :119:CALL           v2()
+[097] :120:GETIMPORT      v2 = pcall
+[098] :120:DUPCLOSURE     v3 = function()
+-- proto pool id: 13
+-- num upvalues: 0
+-- num inner protos: 0
+-- size instructions: 32
+-- size constants: 12
+-- lineinfo gap: 24
+-- max stack size: 8
+-- is typed: false
+[002] :121:GETIMPORT      v0 = pairs
+[004] :121:GETIMPORT      v4 = script
+[006] :121:GETTABLEKS     v3 = v4.Parent
+[008] :121:GETTABLEKS     v2 = v3.EntireFrame
+[010] :121:GETTABLEKS     v1 = v2.Scroll
+[013] :121:CALL           ... = v1:GetChildren()
+[014] :121:CALL           v0, v1, v2 = v0(...)
+[015] :121:FORGPREP_NEXT  for v3, v4 in pairs(v1) do -- could be doing next, t
+[016] :122:LOADK          v7 = "ScrollingFrame"
+[019] :122:CALL           v5 = v5:IsA(v7)
+[020] :122:JUMPIFNOT      if v5 then -- goto #29
+[022] :123:GETIMPORT      v6 = script
+[024] :123:GETTABLEKS     v5 = v6.UIListLayout
+[027] :123:CALL           v5 = v5:Clone()
+[029] :123:SETTABLEKS     v5.Parent = v4
+[031] :121:FORGLOOP       end -- iterate + jump to #16
+[032] :126:RETURN         return
+end
+[099] :120:CALL           v2(v3)
+[101] :127:GETIMPORT      v2 = pcall
+[102] :127:DUPCLOSURE     v3 = function()
+-- proto pool id: 17
+-- num upvalues: 0
+-- num inner protos: 3
+-- size instructions: 44
+-- size constants: 14
+-- lineinfo gap: 24
+-- max stack size: 8
+-- is typed: false
+[002] :128:GETIMPORT      v0 = pairs
+[004] :128:GETIMPORT      v4 = script
+[006] :128:GETTABLEKS     v3 = v4.Parent
+[008] :128:GETTABLEKS     v2 = v3.EntireFrame
+[010] :128:GETTABLEKS     v1 = v2.Button
+[013] :128:CALL           ... = v1:GetChildren()
+[014] :128:CALL           v0, v1, v2 = v0(...)
+[015] :128:FORGPREP_NEXT  for v3, v4 in pairs(v1) do -- could be doing next, t
+[016] :129:LOADK          v7 = "TextButton"
+[019] :129:CALL           v5 = v5:IsA(v7)
+[020] :129:JUMPIFNOT      if v5 then -- goto #41
+[022] :130:GETTABLEKS     v5 = v4.MouseButton1Click
+[023] :130:NEWCLOSURE     v7 = function()
+-- proto pool id: 14
+-- num upvalues: 1
+-- num inner protos: 0
+-- size instructions: 84
+-- size constants: 22
+-- lineinfo gap: 24
+-- max stack size: 8
+-- is typed: false
+[002] :131:GETIMPORT      v0 = pairs
+[004] :131:GETIMPORT      v4 = script
+[006] :131:GETTABLEKS     v3 = v4.Parent
+[008] :131:GETTABLEKS     v2 = v3.EntireFrame
+[010] :131:GETTABLEKS     v1 = v2.Scroll
+[013] :131:CALL           ... = v1:GetChildren()
+[014] :131:CALL           v0, v1, v2 = v0(...)
+[015] :131:FORGPREP_NEXT  for v3, v4 in pairs(v1) do -- could be doing next, t
+[016] :132:LOADB          v5 = false
+[018] :132:SETTABLEKS     v4.Visible = v5
+[020] :131:FORGLOOP       end -- iterate + jump to #16
+[022] :134:GETIMPORT      v3 = script
+[024] :134:GETTABLEKS     v2 = v3.Parent
+[026] :134:GETTABLEKS     v1 = v2.EntireFrame
+[028] :134:GETTABLEKS     v0 = v1.Scroll
+[029] :134:GETUPVAL       v3 = u_v4
+[031] :134:GETTABLEKS     v2 = v3.Name
+[034] :134:CALL           v0 = v0:FindFirstChild(v2)
+[035] :134:LOADB          v1 = true
+[037] :134:SETTABLEKS     v0.Visible = v1
+[038] :135:GETUPVAL       v0 = u_v4
+[039] :135:LOADK          v2 = "smh"
+[042] :135:CALL           v0 = v0:HasTag(v2)
+[043] :135:JUMPIFNOT      if v0 then -- goto #83
+[045] :136:GETIMPORT      v0 = pairs
+[047] :136:GETIMPORT      v4 = script
+[049] :136:GETTABLEKS     v3 = v4.Parent
+[051] :136:GETTABLEKS     v2 = v3.EntireFrame
+[053] :136:GETTABLEKS     v1 = v2.Scroll
+[056] :136:CALL           ... = v1:GetChildren()
+[057] :136:CALL           v0, v1, v2 = v0(...)
+[058] :136:FORGPREP_NEXT  for v3, v4 in pairs(v1) do -- could be doing next, t
+[059] :137:LOADK          v7 = "ScrollingFrame"
+[062] :137:CALL           v5 = v5:IsA(v7)
+[063] :137:JUMPIFNOT      if v5 then -- goto #70
+[065] :138:GETIMPORT      v5 = UDim2.fromScale
+[066] :138:LOADK          v6 = 0.581
+[067] :138:LOADK          v7 = 0.63
+[068] :138:CALL           v5 = v5(v6, v7)
+[070] :138:SETTABLEKS     v4.Size = v5
+[072] :136:FORGLOOP       end -- iterate + jump to #59
+[074] :141:GETIMPORT      v3 = script
+[076] :141:GETTABLEKS     v2 = v3.Parent
+[078] :141:GETTABLEKS     v1 = v2.EntireFrame
+[080] :141:GETTABLEKS     v0 = v1.Stats
+[081] :141:LOADB          v1 = false
+[083] :141:SETTABLEKS     v0.Visible = v1
+[084] :143:RETURN         return
+end
+[027] :130:CALL           v5:Connect(v7)
+[029] :144:GETTABLEKS     v5 = v4.MouseEnter
+[030] :144:NEWCLOSURE     v7 = function()
+-- proto pool id: 15
+-- num upvalues: 1
+-- num inner protos: 0
+-- size instructions: 65
+-- size constants: 22
+-- lineinfo gap: 24
+-- max stack size: 9
+-- is typed: false
+[002] :145:GETIMPORT      v1 = script
+[004] :145:GETTABLEKS     v0 = v1.select
+[007] :145:CALL           v0:Play()
+[009] :146:GETIMPORT      v0 = game
+[010] :146:LOADK          v2 = "TweenService"
+[013] :146:CALL           v0 = v0:GetService(v2)
+[014] :146:GETUPVAL       v2 = u_v4
+[016] :146:GETIMPORT      v3 = TweenInfo.new
+[017] :146:LOADK          v4 = 0.8
+[018] :146:CALL           v3 = v3(v4)
+[019] :146:DUPTABLE       v4 = {} -- {"TextColor3", "Rotation"}
+[021] :146:GETIMPORT      v5 = Color3.fromRGB
+[022] :146:LOADN          v6 = 255
+[023] :146:LOADN          v7 = 255
+[024] :146:LOADN          v8 = 0
+[025] :146:CALL           v5 = v5(v6, v7, v8)
+[027] :146:SETTABLEKS     v4.TextColor3 = v5
+[028] :146:LOADN          v5 = 5
+[030] :146:SETTABLEKS     v4.Rotation = v5
+[033] :146:CALL           v0 = v0:Create(v2, v3, v4)
+[036] :146:CALL           v0:Play()
+[038] :147:GETIMPORT      v0 = game
+[039] :147:LOADK          v2 = "TweenService"
+[042] :147:CALL           v0 = v0:GetService(v2)
+[043] :147:GETUPVAL       v3 = u_v4
+[045] :147:GETTABLEKS     v2 = v3.UIStroke
+[047] :147:GETIMPORT      v3 = TweenInfo.new
+[048] :147:LOADK          v4 = 0.8
+[049] :147:CALL           v3 = v3(v4)
+[050] :147:DUPTABLE       v4 = {} -- {"Color"}
+[052] :147:GETIMPORT      v5 = Color3.fromRGB
+[053] :147:LOADN          v6 = 255
+[054] :147:LOADN          v7 = 255
+[055] :147:LOADN          v8 = 0
+[056] :147:CALL           v5 = v5(v6, v7, v8)
+[058] :147:SETTABLEKS     v4.Color = v5
+[061] :147:CALL           v0 = v0:Create(v2, v3, v4)
+[064] :147:CALL           v0:Play()
+[065] :148:RETURN         return
+end
+[034] :144:CALL           v5:Connect(v7)
+[036] :149:GETTABLEKS     v5 = v4.MouseLeave
+[037] :149:NEWCLOSURE     v7 = function()
+-- proto pool id: 16
+-- num upvalues: 1
+-- num inner protos: 0
+-- size instructions: 58
+-- size constants: 19
+-- lineinfo gap: 24
+-- max stack size: 9
+-- is typed: false
+[002] :150:GETIMPORT      v0 = game
+[003] :150:LOADK          v2 = "TweenService"
+[006] :150:CALL           v0 = v0:GetService(v2)
+[007] :150:GETUPVAL       v2 = u_v4
+[009] :150:GETIMPORT      v3 = TweenInfo.new
+[010] :150:LOADK          v4 = 0.8
+[011] :150:CALL           v3 = v3(v4)
+[012] :150:DUPTABLE       v4 = {} -- {"TextColor3", "Rotation"}
+[014] :150:GETIMPORT      v5 = Color3.fromRGB
+[015] :150:LOADN          v6 = 220
+[016] :150:LOADN          v7 = 220
+[017] :150:LOADN          v8 = 220
+[018] :150:CALL           v5 = v5(v6, v7, v8)
+[020] :150:SETTABLEKS     v4.TextColor3 = v5
+[021] :150:LOADN          v5 = 0
+[023] :150:SETTABLEKS     v4.Rotation = v5
+[026] :150:CALL           v0 = v0:Create(v2, v3, v4)
+[029] :150:CALL           v0:Play()
+[031] :151:GETIMPORT      v0 = game
+[032] :151:LOADK          v2 = "TweenService"
+[035] :151:CALL           v0 = v0:GetService(v2)
+[036] :151:GETUPVAL       v3 = u_v4
+[038] :151:GETTABLEKS     v2 = v3.UIStroke
+[040] :151:GETIMPORT      v3 = TweenInfo.new
+[041] :151:LOADK          v4 = 0.8
+[042] :151:CALL           v3 = v3(v4)
+[043] :151:DUPTABLE       v4 = {} -- {"Color"}
+[045] :151:GETIMPORT      v5 = Color3.fromRGB
+[046] :151:LOADN          v6 = 220
+[047] :151:LOADN          v7 = 220
+[048] :151:LOADN          v8 = 220
+[049] :151:CALL           v5 = v5(v6, v7, v8)
+[051] :151:SETTABLEKS     v4.Color = v5
+[054] :151:CALL           v0 = v0:Create(v2, v3, v4)
+[057] :151:CALL           v0:Play()
+[058] :152:RETURN         return
+end
+[041] :149:CALL           v5:Connect(v7)
+[043] :128:FORGLOOP       end -- iterate + jump to #16
+[044] :155:RETURN         return
+end
+[103] :127:CALL           v2(v3)
+[105] :157:GETIMPORT      v7 = script
+[107] :157:GETTABLEKS     v6 = v7.Parent
+[109] :157:GETTABLEKS     v5 = v6.EntireFrame
+[111] :157:GETTABLEKS     v4 = v5.Stats
+[113] :157:GETTABLEKS     v3 = v4.Close
+[115] :157:GETTABLEKS     v2 = v3.MouseButton1Click
+[116] :157:DUPCLOSURE     v4 = function()
+-- proto pool id: 19
+-- num upvalues: 0
+-- num inner protos: 1
+-- size instructions: 5
+-- size constants: 3
+-- lineinfo gap: 24
+-- max stack size: 2
+-- is typed: false
+[002] :158:GETIMPORT      v0 = pcall
+[003] :158:DUPCLOSURE     v1 = function()
+-- proto pool id: 18
+-- num upvalues: 0
+-- num inner protos: 0
+-- size instructions: 41
+-- size constants: 18
+-- lineinfo gap: 24
+-- max stack size: 8
+-- is typed: false
+[002] :159:GETIMPORT      v0 = pairs
+[004] :159:GETIMPORT      v4 = script
+[006] :159:GETTABLEKS     v3 = v4.Parent
+[008] :159:GETTABLEKS     v2 = v3.EntireFrame
+[010] :159:GETTABLEKS     v1 = v2.Scroll
+[013] :159:CALL           ... = v1:GetChildren()
+[014] :159:CALL           v0, v1, v2 = v0(...)
+[015] :159:FORGPREP_NEXT  for v3, v4 in pairs(v1) do -- could be doing next, t
+[016] :160:LOADK          v7 = "ScrollingFrame"
+[019] :160:CALL           v5 = v5:IsA(v7)
+[020] :160:JUMPIFNOT      if v5 then -- goto #27
+[022] :161:GETIMPORT      v5 = UDim2.fromScale
+[023] :161:LOADK          v6 = 0.581
+[024] :161:LOADK          v7 = 0.63
+[025] :161:CALL           v5 = v5(v6, v7)
+[027] :161:SETTABLEKS     v4.Size = v5
+[029] :159:FORGLOOP       end -- iterate + jump to #16
+[031] :164:GETIMPORT      v3 = script
+[033] :164:GETTABLEKS     v2 = v3.Parent
+[035] :164:GETTABLEKS     v1 = v2.EntireFrame
+[037] :164:GETTABLEKS     v0 = v1.Stats
+[038] :164:LOADB          v1 = false
+[040] :164:SETTABLEKS     v0.Visible = v1
+[041] :165:RETURN         return
+end
+[004] :158:CALL           v0(v1)
+[005] :166:RETURN         return
+end
+[119] :157:CALL           v2:Connect(v4)
+[120] :168:LOADN          v2 = 0
+[122] :169:NEWTABLE       v3 = {} --[[3 preallocated indexes]]
+[123] :169:LOADK          v4 = "Are you sure?"
+[124] :169:LOADK          v5 = "Are you actually actually sure?"
+[125] :169:LOADK          v6 = "Click me"
+[127] :169:SETLIST        v3[1] = v4
+v4[2] = v5
+v4[3] = v6
+[129] :426:GETIMPORT      v9 = script
+[131] :426:GETTABLEKS     v8 = v9.Parent
+[133] :426:GETTABLEKS     v7 = v8.EntireFrame
+[135] :426:GETTABLEKS     v6 = v7.Stats
+[137] :426:GETTABLEKS     v5 = v6.Sacrifice
+[139] :426:GETTABLEKS     v4 = v5.MouseButton1Click
+[140] :426:NEWCLOSURE     v6 = function()
+-- proto pool id: 21
+-- num upvalues: 3
+-- num inner protos: 1
+-- size instructions: 8
+-- size constants: 2
+-- lineinfo gap: 24
+-- max stack size: 2
+-- is typed: false
+[002] :171:GETIMPORT      v0 = pcall
+[003] :171:NEWCLOSURE     v1 = function()
+-- proto pool id: 20
+-- num upvalues: 3
+-- num inner protos: 0
+-- size instructions: 134
+-- size constants: 24
+-- lineinfo gap: 24
+-- max stack size: 14
+-- is typed: false
+[002] :172:GETIMPORT      v4 = script
+[004] :172:GETTABLEKS     v3 = v4.Parent
+[006] :172:GETTABLEKS     v2 = v3.EntireFrame
+[008] :172:GETTABLEKS     v1 = v2.ButtonSelect
+[010] :172:GETTABLEKS     v0 = v1.Value
+[012] :172:JUMPXEQKNIL    if v0 == nil then -- goto #14
+[013] :172:RETURN         return
+end
+[014] :173:GETUPVAL       v0 = u_v2
+[015] :173:ADDK           v0 = v0 + 1
+[016] :173:SETUPVAL       u_v2 = v0
+[018] :174:GETIMPORT      v4 = script
+[020] :174:GETTABLEKS     v3 = v4.Parent
+[022] :174:GETTABLEKS     v2 = v3.EntireFrame
+[024] :174:GETTABLEKS     v1 = v2.Stats
+[026] :174:GETTABLEKS     v0 = v1.Sacrifice
+[027] :174:GETUPVAL       v2 = u_v3
+[028] :174:GETUPVAL       v3 = u_v2
+[029] :174:GETTABLE       v1 = v2[v3]
+[031] :174:SETTABLEKS     v0.Text = v1
+[032] :175:GETUPVAL       v0 = u_v2
+[033] :175:LOADN          v1 = 3
+[035] :175:JUMPIFNOTLT    if v0 < v1 then -- goto #37
+[036] :175:RETURN         return
+end
+[038] :176:GETIMPORT      v4 = script
+[040] :176:GETTABLEKS     v3 = v4.Parent
+[042] :176:GETTABLEKS     v2 = v3.EntireFrame
+[044] :176:GETTABLEKS     v1 = v2.Stats
+[046] :176:GETTABLEKS     v0 = v1.Sacrifice
+[047] :176:LOADK          v1 = "Sacrifice"
+[049] :176:SETTABLEKS     v0.Text = v1
+[051] :177:GETIMPORT      v4 = game
+[053] :177:GETTABLEKS     v3 = v4.Players
+[055] :177:GETTABLEKS     v2 = v3.LocalPlayer
+[056] :177:LOADK          v4 = "Storage"
+[059] :177:CALL           v2 = v2:FindFirstChild(v4)
+[060] :177:GETUPVAL       v6 = u_v0
+[062] :177:GETIMPORT      v13 = script
+[064] :177:GETTABLEKS     v12 = v13.Parent
+[066] :177:GETTABLEKS     v11 = v12.EntireFrame
+[068] :177:GETTABLEKS     v10 = v11.ButtonSelect
+[070] :177:GETTABLEKS     v9 = v10.Value
+[072] :177:GETTABLEKS     v8 = v9.Number
+[074] :177:GETTABLEKS     v7 = v8.Value
+[075] :177:GETTABLE       v5 = v6[v7]
+[077] :177:GETTABLEKS     v4 = v5.Name
+[080] :177:CALL           v2 = v2:FindFirstChild(v4)
+[082] :177:GETTABLEKS     v1 = v2.Value
+[084] :177:GETIMPORT      v4 = script
+[086] :177:GETTABLEKS     v3 = v4.Amount
+[088] :177:GETTABLEKS     v2 = v3.Value
+[089] :177:SUB            v0 = v1 - v2
+[090] :177:LOADN          v1 = 1
+[092] :177:JUMPIFNOTLT    if v0 < v1 then -- goto #103
+[094] :178:GETIMPORT      v1 = script
+[096] :178:GETTABLEKS     v0 = v1.change
+[097] :178:LOADN          v2 = 1
+[098] :178:LOADK          v3 = "am"
+[101] :178:CALL           v0:FireServer(v2, v3)
+[102] :179:RETURN         return
+end
+[104] :181:GETIMPORT      v3 = game
+[106] :181:GETTABLEKS     v2 = v3.ReplicatedStorage
+[108] :181:GETTABLEKS     v1 = v2.RemoteEvent
+[110] :181:GETTABLEKS     v0 = v1.Sacrifice
+[112] :181:GETIMPORT      v8 = script
+[114] :181:GETTABLEKS     v7 = v8.Parent
+[116] :181:GETTABLEKS     v6 = v7.EntireFrame
+[118] :181:GETTABLEKS     v5 = v6.ButtonSelect
+[120] :181:GETTABLEKS     v4 = v5.Value
+[122] :181:GETTABLEKS     v3 = v4.Number
+[124] :181:GETTABLEKS     v2 = v3.Value
+[126] :181:GETIMPORT      v5 = script
+[128] :181:GETTABLEKS     v4 = v5.Amount
+[130] :181:GETTABLEKS     v3 = v4.Value
+[133] :181:CALL           v0:FireServer(v2, v3)
+[134] :182:RETURN         return
+end
+[007] :171:CALL           v0(v1)
+[008] :183:RETURN         return
+end
+[146] :426:CALL           v4:Connect(v6)
+[148] :441:GETIMPORT      v4 = pcall
+[149] :441:DUPCLOSURE     v5 = function()
+-- proto pool id: 25
+-- num upvalues: 1
+-- num inner protos: 1
+-- size instructions: 6
+-- size constants: 4
+-- lineinfo gap: 24
+-- max stack size: 2
+-- is typed: false
+[002] :186:GETIMPORT      v0 = task.spawn
+[003] :186:DUPCLOSURE     v1 = function()
+-- proto pool id: 24
+-- num upvalues: 1
+-- num inner protos: 1
+-- size instructions: 18
+-- size constants: 9
+-- lineinfo gap: 24
+-- max stack size: 4
+-- is typed: false
+[002] :187:GETIMPORT      v3 = script
+[004] :187:GETTABLEKS     v2 = v3.Parent
+[006] :187:GETTABLEKS     v1 = v2.EntireFrame
+[008] :187:GETTABLEKS     v0 = v1.ButtonSelect
+[009] :187:LOADK          v2 = "Value"
+[012] :187:CALL           v0 = v0:GetPropertyChangedSignal(v2)
+[013] :187:DUPCLOSURE     v2 = function()
+-- proto pool id: 23
+-- num upvalues: 1
+-- num inner protos: 1
+-- size instructions: 87
+-- size constants: 21
+-- lineinfo gap: 24
+-- max stack size: 10
+-- is typed: false
+[002] :188:GETIMPORT      v4 = script
+[004] :188:GETTABLEKS     v3 = v4.Parent
+[006] :188:GETTABLEKS     v2 = v3.EntireFrame
+[008] :188:GETTABLEKS     v1 = v2.ButtonSelect
+[010] :188:GETTABLEKS     v0 = v1.Value
+[012] :188:JUMPXEQKNIL    if v0 == nil then -- goto #14
+[013] :188:RETURN         return
+end
+[014] :189:GETUPVAL       v2 = u_v0
+[016] :189:GETIMPORT      v9 = script
+[018] :189:GETTABLEKS     v8 = v9.Parent
+[020] :189:GETTABLEKS     v7 = v8.EntireFrame
+[022] :189:GETTABLEKS     v6 = v7.ButtonSelect
+[024] :189:GETTABLEKS     v5 = v6.Value
+[026] :189:GETTABLEKS     v4 = v5.Number
+[028] :189:GETTABLEKS     v3 = v4.Value
+[029] :189:GETTABLE       v1 = v2[v3]
+[031] :189:GETTABLEKS     v0 = v1.Name
+[033] :190:GETIMPORT      v5 = script
+[035] :190:GETTABLEKS     v4 = v5.Parent
+[037] :190:GETTABLEKS     v3 = v4.EntireFrame
+[039] :190:GETTABLEKS     v2 = v3.Stats
+[041] :190:GETTABLEKS     v1 = v2.Total
+[042] :190:LOADK          v3 = "Total : "
+[044] :190:GETIMPORT      v7 = game
+[046] :190:GETTABLEKS     v6 = v7.Players
+[048] :190:GETTABLEKS     v5 = v6.LocalPlayer
+[049] :190:LOADK          v7 = "SacrificeStore"
+[050] :190:LOADN          v8 = 50
+[053] :190:CALL           v5 = v5:WaitForChild(v7, v8)
+[054] :190:MOVE           v7 = v0
+[057] :190:CALL           v5 = v5:FindFirstChild(v7)
+[059] :190:GETTABLEKS     v4 = v5.Value
+[060] :190:CONCAT         v2 = v3 .. v4
+[062] :190:SETTABLEKS     v1.Text = v2
+[064] :191:GETIMPORT      v3 = game
+[066] :191:GETTABLEKS     v2 = v3.Players
+[068] :191:GETTABLEKS     v1 = v2.LocalPlayer
+[069] :191:LOADK          v3 = "SacrificeStore"
+[070] :191:LOADN          v4 = 50
+[073] :191:CALL           v1 = v1:WaitForChild(v3, v4)
+[074] :191:MOVE           v3 = v0
+[077] :191:CALL           v1 = v1:FindFirstChild(v3)
+[078] :191:LOADK          v3 = "Value"
+[081] :191:CALL           v1 = v1:GetPropertyChangedSignal(v3)
+[082] :191:NEWCLOSURE     v3 = function()
+-- proto pool id: 22
+-- num upvalues: 1
+-- num inner protos: 0
+-- size instructions: 32
+-- size constants: 16
+-- lineinfo gap: 24
+-- max stack size: 8
+-- is typed: false
+[002] :192:GETIMPORT      v4 = script
+[004] :192:GETTABLEKS     v3 = v4.Parent
+[006] :192:GETTABLEKS     v2 = v3.EntireFrame
+[008] :192:GETTABLEKS     v1 = v2.Stats
+[010] :192:GETTABLEKS     v0 = v1.Total
+[011] :192:LOADK          v2 = "Total : "
+[013] :192:GETIMPORT      v6 = game
+[015] :192:GETTABLEKS     v5 = v6.Players
+[017] :192:GETTABLEKS     v4 = v5.LocalPlayer
+[018] :192:LOADK          v6 = "SacrificeStore"
+[019] :192:LOADN          v7 = 50
+[022] :192:CALL           v4 = v4:WaitForChild(v6, v7)
+[023] :192:GETUPVAL       v6 = u_v0
+[026] :192:CALL           v4 = v4:FindFirstChild(v6)
+[028] :192:GETTABLEKS     v3 = v4.Value
+[029] :192:CONCAT         v1 = v2 .. v3
+[031] :192:SETTABLEKS     v0.Text = v1
+[032] :193:RETURN         return
+end
+[086] :191:CALL           v1:Connect(v3)
+[087] :194:RETURN         return
+end
+[017] :187:CALL           v0:Connect(v2)
+[018] :195:RETURN         return
+end
+[005] :186:CALL           v0(v1)
+[006] :196:RETURN         return
+end
+[151] :441:CALL           v4(v5)
+[153] :454:GETIMPORT      v4 = pcall
+[154] :454:DUPCLOSURE     v5 = function()
+-- proto pool id: 28
+-- num upvalues: 0
+-- num inner protos: 1
+-- size instructions: 5
+-- size constants: 4
+-- lineinfo gap: 24
+-- max stack size: 2
+-- is typed: false
+[002] :199:GETIMPORT      v0 = task.spawn
+[003] :199:DUPCLOSURE     v1 = function()
+-- proto pool id: 27
+-- num upvalues: 0
+-- num inner protos: 1
+-- size instructions: 57
+-- size constants: 21
+-- lineinfo gap: 24
+-- max stack size: 8
+-- is typed: false
+[002] :200:GETIMPORT      v5 = script
+[004] :200:GETTABLEKS     v4 = v5.Parent
+[006] :200:GETTABLEKS     v3 = v4.EntireFrame
+[008] :200:GETTABLEKS     v2 = v3.Scroll
+[010] :200:GETTABLEKS     v1 = v2.Convert
+[012] :200:GETTABLEKS     v0 = v1.TextLabel
+[013] :200:LOADK          v2 = "Alter : "
+[015] :200:GETIMPORT      v6 = game
+[017] :200:GETTABLEKS     v5 = v6.Players
+[019] :200:GETTABLEKS     v4 = v5.LocalPlayer
+[020] :200:LOADK          v6 = "leaderstats"
+[021] :200:LOADN          v7 = 50
+[024] :200:CALL           v4 = v4:WaitForChild(v6, v7)
+[025] :200:LOADK          v6 = "Alter"
+[028] :200:CALL           v4 = v4:FindFirstChild(v6)
+[030] :200:GETTABLEKS     v3 = v4.Value
+[031] :200:CONCAT         v1 = v2 .. v3
+[033] :200:SETTABLEKS     v0.Text = v1
+[035] :201:GETIMPORT      v2 = game
+[037] :201:GETTABLEKS     v1 = v2.Players
+[039] :201:GETTABLEKS     v0 = v1.LocalPlayer
+[040] :201:LOADK          v2 = "leaderstats"
+[041] :201:LOADN          v3 = 50
+[044] :201:CALL           v0 = v0:WaitForChild(v2, v3)
+[045] :201:LOADK          v2 = "Alter"
+[048] :201:CALL           v0 = v0:FindFirstChild(v2)
+[049] :201:LOADK          v2 = "Value"
+[052] :201:CALL           v0 = v0:GetPropertyChangedSignal(v2)
+[053] :201:DUPCLOSURE     v2 = function()
+-- proto pool id: 26
+-- num upvalues: 0
+-- num inner protos: 0
+-- size instructions: 34
+-- size constants: 18
+-- lineinfo gap: 24
+-- max stack size: 8
+-- is typed: false
+[002] :202:GETIMPORT      v5 = script
+[004] :202:GETTABLEKS     v4 = v5.Parent
+[006] :202:GETTABLEKS     v3 = v4.EntireFrame
+[008] :202:GETTABLEKS     v2 = v3.Scroll
+[010] :202:GETTABLEKS     v1 = v2.Convert
+[012] :202:GETTABLEKS     v0 = v1.TextLabel
+[013] :202:LOADK          v2 = "Alter : "
+[015] :202:GETIMPORT      v6 = game
+[017] :202:GETTABLEKS     v5 = v6.Players
+[019] :202:GETTABLEKS     v4 = v5.LocalPlayer
+[020] :202:LOADK          v6 = "leaderstats"
+[021] :202:LOADN          v7 = 50
+[024] :202:CALL           v4 = v4:WaitForChild(v6, v7)
+[025] :202:LOADK          v6 = "Alter"
+[028] :202:CALL           v4 = v4:FindFirstChild(v6)
+[030] :202:GETTABLEKS     v3 = v4.Value
+[031] :202:CONCAT         v1 = v2 .. v3
+[033] :202:SETTABLEKS     v0.Text = v1
+[034] :203:RETURN         return
+end
+[056] :201:CALL           v0:Connect(v2)
+[057] :204:RETURN         return
+end
+[004] :199:CALL           v0(v1)
+[005] :205:RETURN         return
+end
+[155] :454:CALL           v4(v5)
+[157] :463:GETIMPORT      v8 = game
+[159] :463:GETTABLEKS     v7 = v8.ReplicatedStorage
+[161] :463:GETTABLEKS     v6 = v7.RemoteEvent
+[163] :463:GETTABLEKS     v5 = v6.Refreshidk
+[165] :463:GETTABLEKS     v4 = v5.OnClientEvent
+[166] :463:DUPCLOSURE     v6 = function(p4, p5)
+-- proto pool id: 29
+-- num upvalues: 0
+-- num inner protos: 0
+-- size instructions: 87
+-- size constants: 20
+-- lineinfo gap: 24
+-- max stack size: 11
+-- is typed: false
+[002] :208:GETIMPORT      v3 = game
+[004] :208:GETTABLEKS     v2 = v3.Players
+[006] :208:GETTABLEKS     v1 = v2.LocalPlayer
+[008] :208:GETTABLEKS     v0 = v1.UserId
+[010] :208:JUMPIFEQ       if p4 == v0 then -- goto #12
+[011] :208:RETURN         return
+end
+[012] :209:LOADN          v2 = 1
+[013] :209:LENGTH         v0 = #p5
+[014] :209:LOADN          v1 = 1
+[015] :209:FORNPREP       for v2 = v2, v0, v1 do -- end at #47
+[017] :210:GETIMPORT      v5 = script
+[019] :210:GETTABLEKS     v4 = v5.Parent
+[021] :210:GETTABLEKS     v3 = v4.textidk
+[022] :210:LOADN          v6 = 1
+[025] :210:MOVE           v5 = p5
+[026] :210:MOVE           v7 = v2
+[028] :210:GETIMPORT      v4 = string.sub
+[029] :210:CALL           v4 = v4(v5, v6, v7)
+[031] :210:SETTABLEKS     v3.Text = v4
+[033] :211:GETIMPORT      v6 = script
+[035] :211:GETTABLEKS     v5 = v6.Parent
+[037] :211:GETTABLEKS     v4 = v5.textidk
+[039] :211:GETTABLEKS     v3 = v4.fr
+[042] :211:CALL           v3:Play()
+[044] :212:GETIMPORT      v3 = task.wait
+[045] :212:LOADK          v4 = 0.05
+[046] :212:CALL           v3(v4)
+[047] :209:FORNLOOP       end -- iterate + jump to #15
+[049] :214:GETIMPORT      v0 = task.wait
+[050] :214:LOADN          v1 = 2
+[051] :214:CALL           v0(v1)
+[052] :215:LOADN          v2 = 1
+[053] :215:LENGTH         v0 = #p5
+[054] :215:LOADN          v1 = 1
+[055] :215:FORNPREP       for v2 = v2, v0, v1 do -- end at #77
+[057] :216:GETIMPORT      v5 = script
+[059] :216:GETTABLEKS     v4 = v5.Parent
+[061] :216:GETTABLEKS     v3 = v4.textidk
+[062] :216:LOADN          v6 = 1
+[063] :216:LENGTH         v8 = #p5
+[064] :216:SUB            v7 = v8 - v2
+[067] :216:MOVE           v5 = p5
+[069] :216:GETIMPORT      v4 = string.sub
+[070] :216:CALL           v4 = v4(v5, v6, v7)
+[072] :216:SETTABLEKS     v3.Text = v4
+[074] :217:GETIMPORT      v3 = task.wait
+[075] :217:LOADK          v4 = 0.05
+[076] :217:CALL           v3(v4)
+[077] :215:FORNLOOP       end -- iterate + jump to #55
+[079] :219:GETIMPORT      v2 = script
+[081] :219:GETTABLEKS     v1 = v2.Parent
+[083] :219:GETTABLEKS     v0 = v1.textidk
+[084] :219:LOADB          v1 = false
+[086] :219:SETTABLEKS     v0.Visible = v1
+[087] :220:RETURN         return
+end
+[169] :463:CALL           v4:Connect(v6)
+[170] :478:LOADB          v4 = true
+[172] :479:GETIMPORT      v10 = script
+[174] :479:GETTABLEKS     v9 = v10.Parent
+[176] :479:GETTABLEKS     v8 = v9.EntireFrame
+[178] :479:GETTABLEKS     v7 = v8.Stats
+[180] :479:GETTABLEKS     v6 = v7.AmountText
+[182] :479:GETTABLEKS     v5 = v6.FocusLost
+[183] :479:NEWCLOSURE     v7 = function()
+-- proto pool id: 30
+-- num upvalues: 1
+-- num inner protos: 0
+-- size instructions: 74
+-- size constants: 17
+-- lineinfo gap: 24
+-- max stack size: 8
+-- is typed: false
+[002] :224:GETIMPORT      v6 = script
+[004] :224:GETTABLEKS     v5 = v6.Parent
+[006] :224:GETTABLEKS     v4 = v5.EntireFrame
+[008] :224:GETTABLEKS     v3 = v4.Stats
+[010] :224:GETTABLEKS     v2 = v3.AmountText
+[012] :224:GETTABLEKS     v1 = v2.Text
+[015] :224:GETIMPORT      v0 = tonumber
+[016] :224:CALL           v0 = v0(v1)
+[017] :224:JUMPIF         if not v0 then -- goto #50
+[018] :224:GETUPVAL       v0 = u_v4
+[019] :224:JUMPIFNOT      if v0 then -- goto #50
+[021] :224:GETIMPORT      v4 = script
+[023] :224:GETTABLEKS     v3 = v4.Parent
+[025] :224:GETTABLEKS     v2 = v3.EntireFrame
+[027] :224:GETTABLEKS     v1 = v2.Stats
+[029] :224:GETTABLEKS     v0 = v1.AmountText
+[030] :224:LOADK          v1 = "Invalid Amount"
+[032] :224:SETTABLEKS     v0.Text = v1
+[033] :224:LOADB          v0 = false
+[034] :224:SETUPVAL       u_v4 = v0
+[036] :224:GETIMPORT      v0 = task.wait
+[037] :224:LOADK          v1 = 0.5
+[038] :224:CALL           v0(v1)
+[040] :224:GETIMPORT      v1 = script
+[042] :224:GETTABLEKS     v0 = v1.change
+[043] :224:LOADN          v2 = 1
+[044] :224:LOADK          v3 = "am"
+[047] :224:CALL           v0:FireServer(v2, v3)
+[048] :224:LOADB          v0 = true
+[049] :224:SETUPVAL       u_v4 = v0
+end
+end
+[050] :224:RETURN         return
+[051] :225:GETUPVAL       v0 = u_v4
+[052] :225:JUMPIF         if not v0 then -- goto #53
+end
+[053] :225:RETURN         return
+[055] :226:GETIMPORT      v1 = script
+[057] :226:GETTABLEKS     v0 = v1.change
+[059] :226:GETIMPORT      v7 = script
+[061] :226:GETTABLEKS     v6 = v7.Parent
+[063] :226:GETTABLEKS     v5 = v6.EntireFrame
+[065] :226:GETTABLEKS     v4 = v5.Stats
+[067] :226:GETTABLEKS     v3 = v4.AmountText
+[069] :226:GETTABLEKS     v2 = v3.Text
+[070] :226:LOADK          v3 = "am"
+[073] :226:CALL           v0:FireServer(v2, v3)
+[074] :227:RETURN         return
+end
+[187] :479:CALL           v5:Connect(v7)
+[188] :485:LOADB          v5 = true
+[190] :487:GETIMPORT      v12 = script
+[192] :487:GETTABLEKS     v11 = v12.Parent
+[194] :487:GETTABLEKS     v10 = v11.EntireFrame
+[196] :487:GETTABLEKS     v9 = v10.Scroll
+[198] :487:GETTABLEKS     v8 = v9.Convert
+[200] :487:GETTABLEKS     v7 = v8.AlterAmount
+[202] :487:GETTABLEKS     v6 = v7.FocusLost
+[203] :487:NEWCLOSURE     v8 = function()
+-- proto pool id: 31
+-- num upvalues: 1
+-- num inner protos: 0
+-- size instructions: 80
+-- size constants: 18
+-- lineinfo gap: 24
+-- max stack size: 9
+-- is typed: false
+[002] :232:GETIMPORT      v7 = script
+[004] :232:GETTABLEKS     v6 = v7.Parent
+[006] :232:GETTABLEKS     v5 = v6.EntireFrame
+[008] :232:GETTABLEKS     v4 = v5.Scroll
+[010] :232:GETTABLEKS     v3 = v4.Convert
+[012] :232:GETTABLEKS     v2 = v3.AlterAmount
+[014] :232:GETTABLEKS     v1 = v2.Text
+[017] :232:GETIMPORT      v0 = tonumber
+[018] :232:CALL           v0 = v0(v1)
+[019] :232:JUMPIF         if not v0 then -- goto #54
+[020] :232:GETUPVAL       v0 = u_v5
+[021] :232:JUMPIFNOT      if v0 then -- goto #54
+[023] :232:GETIMPORT      v5 = script
+[025] :232:GETTABLEKS     v4 = v5.Parent
+[027] :232:GETTABLEKS     v3 = v4.EntireFrame
+[029] :232:GETTABLEKS     v2 = v3.Scroll
+[031] :232:GETTABLEKS     v1 = v2.Convert
+[033] :232:GETTABLEKS     v0 = v1.AlterAmount
+[034] :232:LOADK          v1 = "Invalid Amount"
+[036] :232:SETTABLEKS     v0.Text = v1
+[037] :232:LOADB          v0 = false
+[038] :232:SETUPVAL       u_v5 = v0
+[040] :232:GETIMPORT      v0 = task.wait
+[041] :232:LOADK          v1 = 0.5
+[042] :232:CALL           v0(v1)
+[044] :232:GETIMPORT      v1 = script
+[046] :232:GETTABLEKS     v0 = v1.change
+[047] :232:LOADN          v2 = 3
+[048] :232:LOADK          v3 = "ap"
+[051] :232:CALL           v0:FireServer(v2, v3)
+[052] :232:LOADB          v0 = true
+[053] :232:SETUPVAL       u_v5 = v0
+end
+end
+[054] :232:RETURN         return
+[055] :233:GETUPVAL       v0 = u_v5
+[056] :233:JUMPIF         if not v0 then -- goto #57
+end
+[057] :233:RETURN         return
+[059] :234:GETIMPORT      v1 = script
+[061] :234:GETTABLEKS     v0 = v1.change
+[063] :234:GETIMPORT      v8 = script
+[065] :234:GETTABLEKS     v7 = v8.Parent
+[067] :234:GETTABLEKS     v6 = v7.EntireFrame
+[069] :234:GETTABLEKS     v5 = v6.Scroll
+[071] :234:GETTABLEKS     v4 = v5.Convert
+[073] :234:GETTABLEKS     v3 = v4.AlterAmount
+[075] :234:GETTABLEKS     v2 = v3.Text
+[076] :234:LOADK          v3 = "ap"
+[079] :234:CALL           v0:FireServer(v2, v3)
+[080] :235:RETURN         return
+end
+[207] :487:CALL           v6:Connect(v8)
+[208] :493:LOADB          v6 = false
+[210] :494:GETIMPORT      v13 = script
+[212] :494:GETTABLEKS     v12 = v13.Parent
+[214] :494:GETTABLEKS     v11 = v12.EntireFrame
+[216] :494:GETTABLEKS     v10 = v11.Scroll
+[218] :494:GETTABLEKS     v9 = v10.Convert
+[220] :494:GETTABLEKS     v8 = v9.Exchange
+[222] :494:GETTABLEKS     v7 = v8.MouseButton1Click
+[223] :494:NEWCLOSURE     v9 = function()
+-- proto pool id: 33
+-- num upvalues: 1
+-- num inner protos: 1
+-- size instructions: 6
+-- size constants: 2
+-- lineinfo gap: 24
+-- max stack size: 2
+-- is typed: false
+[002] :239:GETIMPORT      v0 = pcall
+[003] :239:NEWCLOSURE     v1 = function()
+-- proto pool id: 32
+-- num upvalues: 1
+-- num inner protos: 0
+-- size instructions: 102
+-- size constants: 21
+-- lineinfo gap: 24
+-- max stack size: 5
+-- is typed: false
+[001] :240:GETUPVAL       v0 = u_v6
+[002] :240:JUMPIFNOT      if v0 then -- goto #3
+end
+[003] :240:RETURN         return
+[004] :241:LOADB          v0 = true
+[005] :241:SETUPVAL       u_v6 = v0
+[007] :242:GETIMPORT      v2 = game
+[009] :242:GETTABLEKS     v1 = v2.Players
+[011] :242:GETTABLEKS     v0 = v1.LocalPlayer
+[012] :242:LOADK          v2 = "leaderstats"
+[015] :242:CALL           v0 = v0:FindFirstChild(v2)
+[016] :242:JUMPIF         if not v0 then -- goto #32
+[018] :242:GETIMPORT      v2 = game
+[020] :242:GETTABLEKS     v1 = v2.Players
+[022] :242:GETTABLEKS     v0 = v1.LocalPlayer
+[023] :242:LOADK          v2 = "leaderstats"
+[026] :242:CALL           v0 = v0:FindFirstChild(v2)
+[027] :242:LOADK          v2 = "Alter"
+[030] :242:CALL           v0 = v0:FindFirstChild(v2)
+[031] :242:JUMPIF         if not v0 then -- goto #32
+end
+end
+[032] :242:RETURN         return
+[034] :243:GETIMPORT      v2 = script
+[036] :243:GETTABLEKS     v1 = v2.ConvertAmount
+[038] :243:GETTABLEKS     v0 = v1.Value
+[039] :243:LOADN          v1 = 3
+[041] :243:JUMPIFNOTLT    if v0 < v1 then -- goto #43
+[042] :243:RETURN         return
+end
+[044] :244:GETIMPORT      v4 = game
+[046] :244:GETTABLEKS     v3 = v4.Players
+[048] :244:GETTABLEKS     v2 = v3.LocalPlayer
+[049] :244:LOADK          v4 = "leaderstats"
+[052] :244:CALL           v2 = v2:FindFirstChild(v4)
+[053] :244:LOADK          v4 = "Alter"
+[056] :244:CALL           v2 = v2:FindFirstChild(v4)
+[058] :244:GETTABLEKS     v1 = v2.Value
+[060] :244:GETIMPORT      v4 = script
+[062] :244:GETTABLEKS     v3 = v4.ConvertAmount
+[064] :244:GETTABLEKS     v2 = v3.Value
+[065] :244:SUB            v0 = v1 - v2
+[066] :244:LOADN          v1 = 3
+[068] :244:JUMPIFNOTLT    if v0 < v1 then -- goto #79
+[070] :245:GETIMPORT      v1 = script
+[072] :245:GETTABLEKS     v0 = v1.change
+[073] :245:LOADN          v2 = 3
+[074] :245:LOADK          v3 = "ap"
+[077] :245:CALL           v0:FireServer(v2, v3)
+[078] :246:RETURN         return
+end
+[080] :248:GETIMPORT      v3 = game
+[082] :248:GETTABLEKS     v2 = v3.ReplicatedStorage
+[084] :248:GETTABLEKS     v1 = v2.RemoteEvent
+[086] :248:GETTABLEKS     v0 = v1.APLuck
+[088] :248:GETIMPORT      v4 = script
+[090] :248:GETTABLEKS     v3 = v4.ConvertAmount
+[092] :248:GETTABLEKS     v2 = v3.Value
+[095] :248:CALL           v0:FireServer(v2)
+[097] :249:GETIMPORT      v0 = task.wait
+[098] :249:LOADK          v1 = 0.5
+[099] :249:CALL           v0(v1)
+[100] :250:LOADB          v0 = false
+[101] :250:SETUPVAL       u_v6 = v0
+[102] :251:RETURN         return
+end
+[005] :239:CALL           v0(v1)
+[006] :252:RETURN         return
+end
+[227] :494:CALL           v7:Connect(v9)
+[228] :510:LOADN          v7 = 0
+[229] :510:LOADK          v8 = 1.5
+[231] :511:GETIMPORT      v10 = game
+[232] :511:LOADK          v12 = "RunService"
+[235] :511:CALL           v10 = v10:GetService(v12)
+[237] :511:GETTABLEKS     v9 = v10.RenderStepped
+[238] :511:NEWCLOSURE     v11 = function(p6)
+-- proto pool id: 34
+-- num upvalues: 2
+-- num inner protos: 0
+-- size instructions: 38
+-- size constants: 11
+-- lineinfo gap: 24
+-- max stack size: 9
+-- is typed: false
+[001] :256:GETUPVAL       v0 = u_v2
+[002] :256:LOADN          v1 = 1
+[004] :256:JUMPIFNOTLT    if v0 < v1 then -- goto #6
+[005] :256:RETURN         return
+end
+[006] :257:GETUPVAL       v0 = u_v7
+[007] :257:ADD            v0 = v0 + p6
+[008] :257:SETUPVAL       u_v7 = v0
+[009] :258:LOADN          v2 = 1
+[010] :258:GETUPVAL       v5 = u_v7
+[011] :258:DIVK           v4 = v5 / 1.5
+[014] :258:GETIMPORT      v3 = math.floor
+[015] :258:CALL           v3 = v3(v4)
+[016] :258:MOVE           v0 = v3
+[017] :258:LOADN          v1 = 1
+[018] :258:FORNPREP       for v2 = v2, v0, v1 do -- end at #37
+[019] :259:GETUPVAL       v3 = u_v7
+[020] :259:SUBK           v3 = v3 - 1.5
+[021] :259:SETUPVAL       u_v7 = v3
+[022] :260:LOADN          v3 = 0
+[023] :260:SETUPVAL       u_v2 = v3
+[025] :261:GETIMPORT      v7 = script
+[027] :261:GETTABLEKS     v6 = v7.Parent
+[029] :261:GETTABLEKS     v5 = v6.EntireFrame
+[031] :261:GETTABLEKS     v4 = v5.Stats
+[033] :261:GETTABLEKS     v3 = v4.Sacrifice
+[034] :261:LOADK          v4 = "Sacrifice"
+[036] :261:SETTABLEKS     v3.Text = v4
+[037] :258:FORNLOOP       end -- iterate + jump to #18
+[038] :263:RETURN         return
+end
+[243] :511:CALL           v9:Connect(v11)
+[245] :521:GETIMPORT      v13 = script
+[247] :521:GETTABLEKS     v12 = v13.Parent
+[249] :521:GETTABLEKS     v11 = v12.OpenIdk
+[251] :521:GETTABLEKS     v9 = v11.Size
+[253] :521:GETIMPORT      v13 = script
+[255] :521:GETTABLEKS     v12 = v13.Parent
+[257] :521:GETTABLEKS     v11 = v12.OpenIdk
+[259] :521:GETTABLEKS     v10 = v11.Position
+[261] :523:GETIMPORT      v14 = script
+[263] :523:GETTABLEKS     v13 = v14.Parent
+[265] :523:GETTABLEKS     v12 = v13.OpenIdk
+[267] :523:GETTABLEKS     v11 = v12.MouseEnter
+[268] :523:DUPCLOSURE     v13 = function()
+-- proto pool id: 35
+-- num upvalues: 2
+-- num inner protos: 0
+-- size instructions: 185
+-- size constants: 43
+-- lineinfo gap: 24
+-- max stack size: 13
+-- is typed: false
+[002] :268:GETIMPORT      v3 = script
+[004] :268:GETTABLEKS     v2 = v3.Parent
+[006] :268:GETTABLEKS     v1 = v2.OpenIdk
+[008] :268:GETTABLEKS     v0 = v1.select
+[011] :268:CALL           v0:Play()
+[013] :269:GETIMPORT      v0 = game
+[014] :269:LOADK          v2 = "TweenService"
+[017] :269:CALL           v0 = v0:GetService(v2)
+[019] :269:GETIMPORT      v5 = script
+[021] :269:GETTABLEKS     v4 = v5.Parent
+[023] :269:GETTABLEKS     v3 = v4.OpenIdk
+[025] :269:GETTABLEKS     v2 = v3.Appear
+[027] :269:GETIMPORT      v3 = TweenInfo.new
+[028] :269:LOADK          v4 = 0.5
+[029] :269:CALL           v3 = v3(v4)
+[030] :269:DUPTABLE       v4 = {} -- {"TextTransparency"}
+[031] :269:LOADN          v5 = 0
+[033] :269:SETTABLEKS     v4.TextTransparency = v5
+[036] :269:CALL           v0 = v0:Create(v2, v3, v4)
+[039] :269:CALL           v0:Play()
+[041] :270:GETIMPORT      v0 = game
+[042] :270:LOADK          v2 = "TweenService"
+[045] :270:CALL           v0 = v0:GetService(v2)
+[047] :270:GETIMPORT      v5 = script
+[049] :270:GETTABLEKS     v4 = v5.Parent
+[051] :270:GETTABLEKS     v3 = v4.OpenIdk
+[053] :270:GETTABLEKS     v2 = v3.UIStroke
+[055] :270:GETIMPORT      v3 = TweenInfo.new
+[056] :270:LOADK          v4 = 0.5
+[057] :270:CALL           v3 = v3(v4)
+[058] :270:DUPTABLE       v4 = {} -- {"Color"}
+[060] :270:GETIMPORT      v5 = Color3.fromRGB
+[061] :270:LOADN          v6 = 255
+[062] :270:LOADN          v7 = 255
+[063] :270:LOADN          v8 = 0
+[064] :270:CALL           v5 = v5(v6, v7, v8)
+[066] :270:SETTABLEKS     v4.Color = v5
+[069] :270:CALL           v0 = v0:Create(v2, v3, v4)
+[072] :270:CALL           v0:Play()
+[074] :271:GETIMPORT      v0 = game
+[075] :271:LOADK          v2 = "TweenService"
+[078] :271:CALL           v0 = v0:GetService(v2)
+[080] :271:GETIMPORT      v4 = script
+[082] :271:GETTABLEKS     v3 = v4.Parent
+[084] :271:GETTABLEKS     v2 = v3.OpenIdk
+[086] :271:GETIMPORT      v3 = TweenInfo.new
+[087] :271:LOADK          v4 = 0.5
+[088] :271:CALL           v3 = v3(v4)
+[089] :271:DUPTABLE       v4 = {} -- {"ImageColor3", "Rotation"}
+[091] :271:GETIMPORT      v5 = Color3.fromRGB
+[092] :271:LOADN          v6 = 255
+[093] :271:LOADN          v7 = 255
+[094] :271:LOADN          v8 = 0
+[095] :271:CALL           v5 = v5(v6, v7, v8)
+[097] :271:SETTABLEKS     v4.ImageColor3 = v5
+[098] :271:LOADN          v5 = 7
+[100] :271:SETTABLEKS     v4.Rotation = v5
+[103] :271:CALL           v0 = v0:Create(v2, v3, v4)
+[106] :271:CALL           v0:Play()
+[108] :272:GETIMPORT      v2 = script
+[110] :272:GETTABLEKS     v1 = v2.Parent
+[112] :272:GETTABLEKS     v0 = v1.OpenIdk
+[113] :272:GETUPVAL       v3 = u_v9
+[115] :272:GETIMPORT      v4 = UDim2.new
+[116] :272:GETUPVAL       v8 = u_v9
+[118] :272:GETTABLEKS     v7 = v8.X
+[120] :272:GETTABLEKS     v6 = v7.Scale
+[121] :272:MULK           v5 = v6 * 0.125
+[122] :272:LOADN          v6 = 0
+[123] :272:GETUPVAL       v10 = u_v9
+[125] :272:GETTABLEKS     v9 = v10.Y
+[127] :272:GETTABLEKS     v8 = v9.Scale
+[128] :272:MULK           v7 = v8 * 0.125
+[129] :272:LOADN          v8 = 0
+[130] :272:CALL           v4 = v4(v5, v6, v7, v8)
+[131] :272:ADD            v2 = v3 + v4
+[132] :272:GETUPVAL       v4 = u_v10
+[134] :272:GETIMPORT      v5 = UDim2.new
+[135] :272:GETUPVAL       v10 = u_v9
+[137] :272:GETTABLEKS     v9 = v10.X
+[139] :272:GETTABLEKS     v8 = v9.Scale
+[140] :272:MULK           v7 = v8 * 0.125
+[141] :272:DIVK           v6 = v7 / 2
+[142] :272:LOADN          v7 = 0
+[143] :272:GETUPVAL       v12 = u_v9
+[145] :272:GETTABLEKS     v11 = v12.Y
+[147] :272:GETTABLEKS     v10 = v11.Scale
+[148] :272:MULK           v9 = v10 * 0.125
+[149] :272:DIVK           v8 = v9 / 2
+[150] :272:LOADN          v9 = 0
+[151] :272:CALL           v5 = v5(v6, v7, v8, v9)
+[152] :272:SUB            v3 = v4 - v5
+[153] :272:LOADK          v4 = "Out"
+[154] :272:LOADK          v5 = "Quart"
+[155] :272:LOADK          v6 = 0.5
+[156] :272:LOADB          v7 = true
+[159] :272:CALL           v0:TweenSizeAndPosition(v2, v3, v4, v5, v6, v7)
+[161] :273:GETIMPORT      v3 = script
+[163] :273:GETTABLEKS     v2 = v3.Parent
+[165] :273:GETTABLEKS     v1 = v2.OpenIdk
+[167] :273:GETTABLEKS     v0 = v1.Appear
+[169] :273:GETIMPORT      v2 = UDim2.fromScale
+[170] :273:LOADK          v3 = 2.5
+[171] :273:LOADK          v4 = 0.541
+[172] :273:CALL           v2 = v2(v3, v4)
+[174] :273:GETIMPORT      v3 = UDim2.fromScale
+[175] :273:LOADK          v4 = -2.508
+[176] :273:LOADK          v5 = 0.217
+[177] :273:CALL           v3 = v3(v4, v5)
+[178] :273:LOADK          v4 = "Out"
+[179] :273:LOADK          v5 = "Quart"
+[180] :273:LOADK          v6 = 0.5
+[181] :273:LOADB          v7 = true
+[184] :273:CALL           v0:TweenSizeAndPosition(v2, v3, v4, v5, v6, v7)
+[185] :274:RETURN         return
+end
+[273] :523:CALL           v11:Connect(v13)
+[275] :531:GETIMPORT      v14 = script
+[277] :531:GETTABLEKS     v13 = v14.Parent
+[279] :531:GETTABLEKS     v12 = v13.OpenIdk
+[281] :531:GETTABLEKS     v11 = v12.MouseLeave
+[282] :531:DUPCLOSURE     v13 = function()
+-- proto pool id: 36
+-- num upvalues: 2
+-- num inner protos: 0
+-- size instructions: 136
+-- size constants: 32
+-- lineinfo gap: 24
+-- max stack size: 9
+-- is typed: false
+[002] :276:GETIMPORT      v0 = game
+[003] :276:LOADK          v2 = "TweenService"
+[006] :276:CALL           v0 = v0:GetService(v2)
+[008] :276:GETIMPORT      v5 = script
+[010] :276:GETTABLEKS     v4 = v5.Parent
+[012] :276:GETTABLEKS     v3 = v4.OpenIdk
+[014] :276:GETTABLEKS     v2 = v3.Appear
+[016] :276:GETIMPORT      v3 = TweenInfo.new
+[017] :276:LOADK          v4 = 0.5
+[018] :276:CALL           v3 = v3(v4)
+[019] :276:DUPTABLE       v4 = {} -- {"TextTransparency"}
+[020] :276:LOADN          v5 = 1
+[022] :276:SETTABLEKS     v4.TextTransparency = v5
+[025] :276:CALL           v0 = v0:Create(v2, v3, v4)
+[028] :276:CALL           v0:Play()
+[030] :277:GETIMPORT      v0 = game
+[031] :277:LOADK          v2 = "TweenService"
+[034] :277:CALL           v0 = v0:GetService(v2)
+[036] :277:GETIMPORT      v5 = script
+[038] :277:GETTABLEKS     v4 = v5.Parent
+[040] :277:GETTABLEKS     v3 = v4.OpenIdk
+[042] :277:GETTABLEKS     v2 = v3.UIStroke
+[044] :277:GETIMPORT      v3 = TweenInfo.new
+[045] :277:LOADK          v4 = 0.5
+[046] :277:CALL           v3 = v3(v4)
+[047] :277:DUPTABLE       v4 = {} -- {"Color"}
+[049] :277:GETIMPORT      v5 = Color3.fromRGB
+[050] :277:LOADN          v6 = 220
+[051] :277:LOADN          v7 = 220
+[052] :277:LOADN          v8 = 220
+[053] :277:CALL           v5 = v5(v6, v7, v8)
+[055] :277:SETTABLEKS     v4.Color = v5
+[058] :277:CALL           v0 = v0:Create(v2, v3, v4)
+[061] :277:CALL           v0:Play()
+[063] :278:GETIMPORT      v0 = game
+[064] :278:LOADK          v2 = "TweenService"
+[067] :278:CALL           v0 = v0:GetService(v2)
+[069] :278:GETIMPORT      v4 = script
+[071] :278:GETTABLEKS     v3 = v4.Parent
+[073] :278:GETTABLEKS     v2 = v3.OpenIdk
+[075] :278:GETIMPORT      v3 = TweenInfo.new
+[076] :278:LOADK          v4 = 0.5
+[077] :278:CALL           v3 = v3(v4)
+[078] :278:DUPTABLE       v4 = {} -- {"ImageColor3", "Rotation"}
+[080] :278:GETIMPORT      v5 = Color3.fromRGB
+[081] :278:LOADN          v6 = 255
+[082] :278:LOADN          v7 = 255
+[083] :278:LOADN          v8 = 255
+[084] :278:CALL           v5 = v5(v6, v7, v8)
+[086] :278:SETTABLEKS     v4.ImageColor3 = v5
+[087] :278:LOADN          v5 = 0
+[089] :278:SETTABLEKS     v4.Rotation = v5
+[092] :278:CALL           v0 = v0:Create(v2, v3, v4)
+[095] :278:CALL           v0:Play()
+[097] :279:GETIMPORT      v2 = script
+[099] :279:GETTABLEKS     v1 = v2.Parent
+[101] :279:GETTABLEKS     v0 = v1.OpenIdk
+[102] :279:GETUPVAL       v2 = u_v9
+[103] :279:GETUPVAL       v3 = u_v10
+[104] :279:LOADK          v4 = "Out"
+[105] :279:LOADK          v5 = "Quart"
+[106] :279:LOADN          v6 = 1
+[107] :279:LOADB          v7 = true
+[110] :279:CALL           v0:TweenSizeAndPosition(v2, v3, v4, v5, v6, v7)
+[112] :280:GETIMPORT      v3 = script
+[114] :280:GETTABLEKS     v2 = v3.Parent
+[116] :280:GETTABLEKS     v1 = v2.OpenIdk
+[118] :280:GETTABLEKS     v0 = v1.Appear
+[120] :280:GETIMPORT      v2 = UDim2.fromScale
+[121] :280:LOADN          v3 = 0
+[122] :280:LOADN          v4 = 0
+[123] :280:CALL           v2 = v2(v3, v4)
+[125] :280:GETIMPORT      v3 = UDim2.fromScale
+[126] :280:LOADK          v4 = 0.5
+[127] :280:LOADK          v5 = 0.5
+[128] :280:CALL           v3 = v3(v4, v5)
+[129] :280:LOADK          v4 = "Out"
+[130] :280:LOADK          v5 = "Quart"
+[131] :280:LOADN          v6 = 1
+[132] :280:LOADB          v7 = true
+[135] :280:CALL           v0:TweenSizeAndPosition(v2, v3, v4, v5, v6, v7)
+[136] :281:RETURN         return
+end
+[287] :531:CALL           v11:Connect(v13)
+[289] :539:GETIMPORT      v14 = script
+[291] :539:GETTABLEKS     v13 = v14.Parent
+[293] :539:GETTABLEKS     v12 = v13.OpenIdk
+[295] :539:GETTABLEKS     v11 = v12.MouseButton1Click
+[296] :539:DUPCLOSURE     v13 = function(p7)
+-- proto pool id: 37
+-- num upvalues: 0
+-- num inner protos: 0
+-- size instructions: 377
+-- size constants: 36
+-- lineinfo gap: 24
+-- max stack size: 9
+-- is typed: false
+[002] :284:GETIMPORT      v0 = pairs
+[004] :284:GETIMPORT      v6 = script
+[006] :284:GETTABLEKS     v5 = v6.Parent
+[008] :284:GETTABLEKS     v4 = v5.Parent
+[010] :284:GETTABLEKS     v3 = v4.Inventory
+[012] :284:GETTABLEKS     v2 = v3.Stuff
+[014] :284:GETTABLEKS     v1 = v2.EntireFrame
+[017] :284:CALL           ... = v1:GetChildren()
+[018] :284:CALL           v0, v1, v2 = v0(...)
+[019] :284:FORGPREP_NEXT  for v3, v4 in pairs(v1) do -- could be doing next, t
+[020] :285:LOADK          v7 = "Frame"
+[023] :285:CALL           v5 = v5:IsA(v7)
+[024] :285:JUMPIF         if not v5 then -- goto #44
+[025] :285:LOADK          v7 = "TextButton"
+[028] :285:CALL           v5 = v5:IsA(v7)
+[029] :285:JUMPIF         if not v5 then -- goto #44
+[030] :285:LOADK          v7 = "TextLabel"
+[033] :285:CALL           v5 = v5:IsA(v7)
+[034] :285:JUMPIF         if not v5 then -- goto #44
+[035] :285:LOADK          v7 = "ScrollingFrame"
+[038] :285:CALL           v5 = v5:IsA(v7)
+[039] :285:JUMPIF         if not v5 then -- goto #44
+[040] :285:LOADK          v7 = "ViewportFrame"
+[043] :285:CALL           v5 = v5:IsA(v7)
+end
+end
+end
+end
+[044] :285:JUMPIFNOT      if v5 then -- goto #47
+[045] :286:LOADB          v5 = false
+[047] :286:SETTABLEKS     v4.Visible = v5
+[049] :284:FORGLOOP       end -- iterate + jump to #20
+[051] :289:GETIMPORT      v0 = pairs
+[053] :289:GETIMPORT      v6 = script
+[055] :289:GETTABLEKS     v5 = v6.Parent
+[057] :289:GETTABLEKS     v4 = v5.Parent
+[059] :289:GETTABLEKS     v3 = v4.Index
+[061] :289:GETTABLEKS     v2 = v3.Stuff
+[063] :289:GETTABLEKS     v1 = v2.EntireFrame
+[066] :289:CALL           ... = v1:GetChildren()
+[067] :289:CALL           v0, v1, v2 = v0(...)
+[068] :289:FORGPREP_NEXT  for v3, v4 in pairs(v1) do -- could be doing next, t
+[069] :290:LOADK          v7 = "Frame"
+[072] :290:CALL           v5 = v5:IsA(v7)
+[073] :290:JUMPIF         if not v5 then -- goto #93
+[074] :290:LOADK          v7 = "TextButton"
+[077] :290:CALL           v5 = v5:IsA(v7)
+[078] :290:JUMPIF         if not v5 then -- goto #93
+[079] :290:LOADK          v7 = "TextLabel"
+[082] :290:CALL           v5 = v5:IsA(v7)
+[083] :290:JUMPIF         if not v5 then -- goto #93
+[084] :290:LOADK          v7 = "ScrollingFrame"
+[087] :290:CALL           v5 = v5:IsA(v7)
+[088] :290:JUMPIF         if not v5 then -- goto #93
+[089] :290:LOADK          v7 = "ViewportFrame"
+[092] :290:CALL           v5 = v5:IsA(v7)
+end
+end
+end
+end
+[093] :290:JUMPIFNOT      if v5 then -- goto #96
+[094] :291:LOADB          v5 = false
+[096] :291:SETTABLEKS     v4.Visible = v5
+[098] :289:FORGLOOP       end -- iterate + jump to #69
+[100] :294:GETIMPORT      v4 = script
+[102] :294:GETTABLEKS     v3 = v4.Parent
+[104] :294:GETTABLEKS     v2 = v3.Parent
+[106] :294:GETTABLEKS     v1 = v2.Inventory
+[108] :294:GETTABLEKS     v0 = v1.InventoryClose
+[109] :294:LOADB          v1 = false
+[111] :294:SETTABLEKS     v0.Value = v1
+[113] :295:GETIMPORT      v4 = script
+[115] :295:GETTABLEKS     v3 = v4.Parent
+[117] :295:GETTABLEKS     v2 = v3.Parent
+[119] :295:GETTABLEKS     v1 = v2.Index
+[121] :295:GETTABLEKS     v0 = v1.IndexClose
+[122] :295:LOADB          v1 = false
+[124] :295:SETTABLEKS     v0.Value = v1
+[126] :296:GETIMPORT      v4 = script
+[128] :296:GETTABLEKS     v3 = v4.Parent
+[130] :296:GETTABLEKS     v2 = v3.Parent
+[132] :296:GETTABLEKS     v1 = v2.Setting
+[134] :296:GETTABLEKS     v0 = v1.OpenSetting
+[135] :296:LOADB          v1 = false
+[137] :296:SETTABLEKS     v0.Value = v1
+[139] :297:GETIMPORT      v5 = script
+[141] :297:GETTABLEKS     v4 = v5.Parent
+[143] :297:GETTABLEKS     v3 = v4.Parent
+[145] :297:GETTABLEKS     v2 = v3.Others
+[147] :297:GETTABLEKS     v1 = v2.Music
+[149] :297:GETTABLEKS     v0 = v1.OpenMusic
+[150] :297:LOADB          v1 = false
+[152] :297:SETTABLEKS     v0.Value = v1
+[154] :298:GETIMPORT      v4 = script
+[156] :298:GETTABLEKS     v3 = v4.Parent
+[158] :298:GETTABLEKS     v2 = v3.Parent
+[160] :298:GETTABLEKS     v1 = v2.Setting
+[162] :298:GETTABLEKS     v0 = v1.Entire
+[163] :298:LOADB          v1 = false
+[165] :298:SETTABLEKS     v0.Visible = v1
+[167] :299:GETIMPORT      v5 = script
+[169] :299:GETTABLEKS     v4 = v5.Parent
+[171] :299:GETTABLEKS     v3 = v4.Parent
+[173] :299:GETTABLEKS     v2 = v3.Inventory
+[175] :299:GETTABLEKS     v1 = v2.Stuff
+[177] :299:GETTABLEKS     v0 = v1.EntireFrame
+[179] :299:GETIMPORT      v2 = UDim2.fromScale
+[180] :299:LOADN          v3 = 0
+[181] :299:LOADK          v4 = -0.1
+[182] :299:CALL           v2 = v2(v3, v4)
+[183] :299:LOADK          v3 = "Out"
+[184] :299:LOADK          v4 = "Quart"
+[185] :299:LOADN          v5 = 0
+[186] :299:LOADB          v6 = true
+[189] :299:CALL           v0:TweenPosition(v2, v3, v4, v5, v6)
+[191] :300:GETIMPORT      v5 = script
+[193] :300:GETTABLEKS     v4 = v5.Parent
+[195] :300:GETTABLEKS     v3 = v4.Parent
+[197] :300:GETTABLEKS     v2 = v3.Index
+[199] :300:GETTABLEKS     v1 = v2.Stuff
+[201] :300:GETTABLEKS     v0 = v1.EntireFrame
+[203] :300:GETIMPORT      v2 = UDim2.fromScale
+[204] :300:LOADN          v3 = 0
+[205] :300:LOADK          v4 = -0.1
+[206] :300:CALL           v2 = v2(v3, v4)
+[207] :300:LOADK          v3 = "Out"
+[208] :300:LOADK          v4 = "Quart"
+[209] :300:LOADN          v5 = 1
+[210] :300:LOADB          v6 = true
+[213] :300:CALL           v0:TweenPosition(v2, v3, v4, v5, v6)
+[215] :301:GETIMPORT      v4 = script
+[217] :301:GETTABLEKS     v3 = v4.Parent
+[219] :301:GETTABLEKS     v2 = v3.Parent
+[221] :301:GETTABLEKS     v1 = v2.Setting
+[223] :301:GETTABLEKS     v0 = v1.Entire
+[225] :301:GETIMPORT      v2 = UDim2.fromScale
+[226] :301:LOADN          v3 = 0
+[227] :301:LOADK          v4 = -0.1
+[228] :301:CALL           v2 = v2(v3, v4)
+[229] :301:LOADK          v3 = "Out"
+[230] :301:LOADK          v4 = "Quart"
+[231] :301:LOADN          v5 = 1
+[232] :301:LOADB          v6 = true
+[235] :301:CALL           v0:TweenPosition(v2, v3, v4, v5, v6)
+[237] :302:GETIMPORT      v5 = script
+[239] :302:GETTABLEKS     v4 = v5.Parent
+[241] :302:GETTABLEKS     v3 = v4.Parent
+[243] :302:GETTABLEKS     v2 = v3.Others
+[245] :302:GETTABLEKS     v1 = v2.Music
+[247] :302:GETTABLEKS     v0 = v1.Entire
+[249] :302:GETIMPORT      v2 = UDim2.fromScale
+[250] :302:LOADN          v3 = 0
+[251] :302:LOADK          v4 = -0.1
+[252] :302:CALL           v2 = v2(v3, v4)
+[253] :302:LOADK          v3 = "Out"
+[254] :302:LOADK          v4 = "Quart"
+[255] :302:LOADN          v5 = 1
+[256] :302:LOADB          v6 = true
+[259] :302:CALL           v0:TweenPosition(v2, v3, v4, v5, v6)
+[261] :303:GETIMPORT      v5 = script
+[263] :303:GETTABLEKS     v4 = v5.Parent
+[265] :303:GETTABLEKS     v3 = v4.Parent
+[267] :303:GETTABLEKS     v2 = v3.Others
+[269] :303:GETTABLEKS     v1 = v2.Music
+[271] :303:GETTABLEKS     v0 = v1.Entire
+[272] :303:LOADB          v1 = false
+[274] :303:SETTABLEKS     v0.Visible = v1
+[276] :304:GETIMPORT      v4 = script
+[278] :304:GETTABLEKS     v3 = v4.Parent
+[280] :304:GETTABLEKS     v2 = v3.Parent
+[282] :304:GETTABLEKS     v1 = v2.Setting
+[284] :304:GETTABLEKS     v0 = v1.Entire
+[285] :304:LOADB          v1 = false
+[287] :304:SETTABLEKS     v0.Visible = v1
+[289] :305:GETIMPORT      v4 = script
+[291] :305:GETTABLEKS     v3 = v4.Parent
+[293] :305:GETTABLEKS     v2 = v3.Parent
+[295] :305:GETTABLEKS     v1 = v2.Sacrifice
+[297] :305:GETTABLEKS     v0 = v1.OpenSac
+[299] :305:GETIMPORT      v7 = script
+[301] :305:GETTABLEKS     v6 = v7.Parent
+[303] :305:GETTABLEKS     v5 = v6.Parent
+[305] :305:GETTABLEKS     v4 = v5.Sacrifice
+[307] :305:GETTABLEKS     v3 = v4.OpenSac
+[309] :305:GETTABLEKS     v2 = v3.Value
+[310] :305:NOT            v1 = not v2
+[312] :305:SETTABLEKS     v0.Value = v1
+[314] :306:GETIMPORT      v4 = script
+[316] :306:GETTABLEKS     v3 = v4.Parent
+[318] :306:GETTABLEKS     v2 = v3.Parent
+[320] :306:GETTABLEKS     v1 = v2.Sacrifice
+[322] :306:GETTABLEKS     v0 = v1.EntireFrame
+[324] :306:GETIMPORT      v1 = UDim2.fromScale
+[325] :306:LOADN          v2 = 0
+[326] :306:LOADK          v3 = -0.1
+[327] :306:CALL           v1 = v1(v2, v3)
+[329] :306:SETTABLEKS     v0.Position = v1
+[331] :307:GETIMPORT      v4 = script
+[333] :307:GETTABLEKS     v3 = v4.Parent
+[335] :307:GETTABLEKS     v2 = v3.Parent
+[337] :307:GETTABLEKS     v1 = v2.Sacrifice
+[339] :307:GETTABLEKS     v0 = v1.EntireFrame
+[341] :307:GETIMPORT      v2 = UDim2.fromScale
+[342] :307:LOADN          v3 = 0
+[343] :307:LOADN          v4 = 0
+[344] :307:CALL           v2 = v2(v3, v4)
+[345] :307:LOADK          v3 = "Out"
+[346] :307:LOADK          v4 = "Quart"
+[347] :307:LOADN          v5 = 1
+[348] :307:LOADB          v6 = true
+[351] :307:CALL           v0:TweenPosition(v2, v3, v4, v5, v6)
+[353] :308:GETIMPORT      v4 = script
+[355] :308:GETTABLEKS     v3 = v4.Parent
+[357] :308:GETTABLEKS     v2 = v3.Parent
+[359] :308:GETTABLEKS     v1 = v2.Sacrifice
+[361] :308:GETTABLEKS     v0 = v1.EntireFrame
+[363] :308:GETIMPORT      v7 = script
+[365] :308:GETTABLEKS     v6 = v7.Parent
+[367] :308:GETTABLEKS     v5 = v6.Parent
+[369] :308:GETTABLEKS     v4 = v5.Sacrifice
+[371] :308:GETTABLEKS     v3 = v4.EntireFrame
+[373] :308:GETTABLEKS     v2 = v3.Visible
+[374] :308:NOT            v1 = not v2
+[376] :308:SETTABLEKS     v0.Visible = v1
+[377] :309:RETURN         return
+end
+[299] :539:CALL           v11:Connect(v13)
+[301] :567:GETIMPORT      v14 = script
+[303] :567:GETTABLEKS     v13 = v14.Parent
+[305] :567:GETTABLEKS     v12 = v13.OldVer
+[307] :567:GETTABLEKS     v11 = v12.MouseButton1Click
+[308] :567:DUPCLOSURE     v13 = function(p8)
+-- proto pool id: 38
+-- num upvalues: 0
+-- num inner protos: 0
+-- size instructions: 377
+-- size constants: 36
+-- lineinfo gap: 24
+-- max stack size: 9
+-- is typed: false
+[002] :312:GETIMPORT      v0 = pairs
+[004] :312:GETIMPORT      v6 = script
+[006] :312:GETTABLEKS     v5 = v6.Parent
+[008] :312:GETTABLEKS     v4 = v5.Parent
+[010] :312:GETTABLEKS     v3 = v4.Inventory
+[012] :312:GETTABLEKS     v2 = v3.Stuff
+[014] :312:GETTABLEKS     v1 = v2.EntireFrame
+[017] :312:CALL           ... = v1:GetChildren()
+[018] :312:CALL           v0, v1, v2 = v0(...)
+[019] :312:FORGPREP_NEXT  for v3, v4 in pairs(v1) do -- could be doing next, t
+[020] :313:LOADK          v7 = "Frame"
+[023] :313:CALL           v5 = v5:IsA(v7)
+[024] :313:JUMPIF         if not v5 then -- goto #44
+[025] :313:LOADK          v7 = "TextButton"
+[028] :313:CALL           v5 = v5:IsA(v7)
+[029] :313:JUMPIF         if not v5 then -- goto #44
+[030] :313:LOADK          v7 = "TextLabel"
+[033] :313:CALL           v5 = v5:IsA(v7)
+[034] :313:JUMPIF         if not v5 then -- goto #44
+[035] :313:LOADK          v7 = "ScrollingFrame"
+[038] :313:CALL           v5 = v5:IsA(v7)
+[039] :313:JUMPIF         if not v5 then -- goto #44
+[040] :313:LOADK          v7 = "ViewportFrame"
+[043] :313:CALL           v5 = v5:IsA(v7)
+end
+end
+end
+end
+[044] :313:JUMPIFNOT      if v5 then -- goto #47
+[045] :314:LOADB          v5 = false
+[047] :314:SETTABLEKS     v4.Visible = v5
+[049] :312:FORGLOOP       end -- iterate + jump to #20
+[051] :317:GETIMPORT      v0 = pairs
+[053] :317:GETIMPORT      v6 = script
+[055] :317:GETTABLEKS     v5 = v6.Parent
+[057] :317:GETTABLEKS     v4 = v5.Parent
+[059] :317:GETTABLEKS     v3 = v4.Index
+[061] :317:GETTABLEKS     v2 = v3.Stuff
+[063] :317:GETTABLEKS     v1 = v2.EntireFrame
+[066] :317:CALL           ... = v1:GetChildren()
+[067] :317:CALL           v0, v1, v2 = v0(...)
+[068] :317:FORGPREP_NEXT  for v3, v4 in pairs(v1) do -- could be doing next, t
+[069] :318:LOADK          v7 = "Frame"
+[072] :318:CALL           v5 = v5:IsA(v7)
+[073] :318:JUMPIF         if not v5 then -- goto #93
+[074] :318:LOADK          v7 = "TextButton"
+[077] :318:CALL           v5 = v5:IsA(v7)
+[078] :318:JUMPIF         if not v5 then -- goto #93
+[079] :318:LOADK          v7 = "TextLabel"
+[082] :318:CALL           v5 = v5:IsA(v7)
+[083] :318:JUMPIF         if not v5 then -- goto #93
+[084] :318:LOADK          v7 = "ScrollingFrame"
+[087] :318:CALL           v5 = v5:IsA(v7)
+[088] :318:JUMPIF         if not v5 then -- goto #93
+[089] :318:LOADK          v7 = "ViewportFrame"
+[092] :318:CALL           v5 = v5:IsA(v7)
+end
+end
+end
+end
+[093] :318:JUMPIFNOT      if v5 then -- goto #96
+[094] :319:LOADB          v5 = false
+[096] :319:SETTABLEKS     v4.Visible = v5
+[098] :317:FORGLOOP       end -- iterate + jump to #69
+[100] :322:GETIMPORT      v4 = script
+[102] :322:GETTABLEKS     v3 = v4.Parent
+[104] :322:GETTABLEKS     v2 = v3.Parent
+[106] :322:GETTABLEKS     v1 = v2.Inventory
+[108] :322:GETTABLEKS     v0 = v1.InventoryClose
+[109] :322:LOADB          v1 = false
+[111] :322:SETTABLEKS     v0.Value = v1
+[113] :323:GETIMPORT      v4 = script
+[115] :323:GETTABLEKS     v3 = v4.Parent
+[117] :323:GETTABLEKS     v2 = v3.Parent
+[119] :323:GETTABLEKS     v1 = v2.Index
+[121] :323:GETTABLEKS     v0 = v1.IndexClose
+[122] :323:LOADB          v1 = false
+[124] :323:SETTABLEKS     v0.Value = v1
+[126] :324:GETIMPORT      v4 = script
+[128] :324:GETTABLEKS     v3 = v4.Parent
+[130] :324:GETTABLEKS     v2 = v3.Parent
+[132] :324:GETTABLEKS     v1 = v2.Setting
+[134] :324:GETTABLEKS     v0 = v1.OpenSetting
+[135] :324:LOADB          v1 = false
+[137] :324:SETTABLEKS     v0.Value = v1
+[139] :325:GETIMPORT      v5 = script
+[141] :325:GETTABLEKS     v4 = v5.Parent
+[143] :325:GETTABLEKS     v3 = v4.Parent
+[145] :325:GETTABLEKS     v2 = v3.Others
+[147] :325:GETTABLEKS     v1 = v2.Music
+[149] :325:GETTABLEKS     v0 = v1.OpenMusic
+[150] :325:LOADB          v1 = false
+[152] :325:SETTABLEKS     v0.Value = v1
+[154] :326:GETIMPORT      v4 = script
+[156] :326:GETTABLEKS     v3 = v4.Parent
+[158] :326:GETTABLEKS     v2 = v3.Parent
+[160] :326:GETTABLEKS     v1 = v2.Setting
+[162] :326:GETTABLEKS     v0 = v1.Entire
+[163] :326:LOADB          v1 = false
+[165] :326:SETTABLEKS     v0.Visible = v1
+[167] :327:GETIMPORT      v5 = script
+[169] :327:GETTABLEKS     v4 = v5.Parent
+[171] :327:GETTABLEKS     v3 = v4.Parent
+[173] :327:GETTABLEKS     v2 = v3.Inventory
+[175] :327:GETTABLEKS     v1 = v2.Stuff
+[177] :327:GETTABLEKS     v0 = v1.EntireFrame
+[179] :327:GETIMPORT      v2 = UDim2.fromScale
+[180] :327:LOADN          v3 = 0
+[181] :327:LOADK          v4 = -0.1
+[182] :327:CALL           v2 = v2(v3, v4)
+[183] :327:LOADK          v3 = "Out"
+[184] :327:LOADK          v4 = "Quart"
+[185] :327:LOADN          v5 = 0
+[186] :327:LOADB          v6 = true
+[189] :327:CALL           v0:TweenPosition(v2, v3, v4, v5, v6)
+[191] :328:GETIMPORT      v5 = script
+[193] :328:GETTABLEKS     v4 = v5.Parent
+[195] :328:GETTABLEKS     v3 = v4.Parent
+[197] :328:GETTABLEKS     v2 = v3.Index
+[199] :328:GETTABLEKS     v1 = v2.Stuff
+[201] :328:GETTABLEKS     v0 = v1.EntireFrame
+[203] :328:GETIMPORT      v2 = UDim2.fromScale
+[204] :328:LOADN          v3 = 0
+[205] :328:LOADK          v4 = -0.1
+[206] :328:CALL           v2 = v2(v3, v4)
+[207] :328:LOADK          v3 = "Out"
+[208] :328:LOADK          v4 = "Quart"
+[209] :328:LOADN          v5 = 0
+[210] :328:LOADB          v6 = true
+[213] :328:CALL           v0:TweenPosition(v2, v3, v4, v5, v6)
+[215] :329:GETIMPORT      v4 = script
+[217] :329:GETTABLEKS     v3 = v4.Parent
+[219] :329:GETTABLEKS     v2 = v3.Parent
+[221] :329:GETTABLEKS     v1 = v2.Setting
+[223] :329:GETTABLEKS     v0 = v1.Entire
+[225] :329:GETIMPORT      v2 = UDim2.fromScale
+[226] :329:LOADN          v3 = 0
+[227] :329:LOADK          v4 = -0.1
+[228] :329:CALL           v2 = v2(v3, v4)
+[229] :329:LOADK          v3 = "Out"
+[230] :329:LOADK          v4 = "Quart"
+[231] :329:LOADN          v5 = 0
+[232] :329:LOADB          v6 = true
+[235] :329:CALL           v0:TweenPosition(v2, v3, v4, v5, v6)
+[237] :330:GETIMPORT      v5 = script
+[239] :330:GETTABLEKS     v4 = v5.Parent
+[241] :330:GETTABLEKS     v3 = v4.Parent
+[243] :330:GETTABLEKS     v2 = v3.Others
+[245] :330:GETTABLEKS     v1 = v2.Music
+[247] :330:GETTABLEKS     v0 = v1.Entire
+[249] :330:GETIMPORT      v2 = UDim2.fromScale
+[250] :330:LOADN          v3 = 0
+[251] :330:LOADK          v4 = -0.1
+[252] :330:CALL           v2 = v2(v3, v4)
+[253] :330:LOADK          v3 = "Out"
+[254] :330:LOADK          v4 = "Quart"
+[255] :330:LOADN          v5 = 1
+[256] :330:LOADB          v6 = true
+[259] :330:CALL           v0:TweenPosition(v2, v3, v4, v5, v6)
+[261] :331:GETIMPORT      v5 = script
+[263] :331:GETTABLEKS     v4 = v5.Parent
+[265] :331:GETTABLEKS     v3 = v4.Parent
+[267] :331:GETTABLEKS     v2 = v3.Others
+[269] :331:GETTABLEKS     v1 = v2.Music
+[271] :331:GETTABLEKS     v0 = v1.Entire
+[272] :331:LOADB          v1 = false
+[274] :331:SETTABLEKS     v0.Visible = v1
+[276] :332:GETIMPORT      v4 = script
+[278] :332:GETTABLEKS     v3 = v4.Parent
+[280] :332:GETTABLEKS     v2 = v3.Parent
+[282] :332:GETTABLEKS     v1 = v2.Setting
+[284] :332:GETTABLEKS     v0 = v1.Entire
+[285] :332:LOADB          v1 = false
+[287] :332:SETTABLEKS     v0.Visible = v1
+[289] :333:GETIMPORT      v4 = script
+[291] :333:GETTABLEKS     v3 = v4.Parent
+[293] :333:GETTABLEKS     v2 = v3.Parent
+[295] :333:GETTABLEKS     v1 = v2.Sacrifice
+[297] :333:GETTABLEKS     v0 = v1.OpenSac
+[299] :333:GETIMPORT      v7 = script
+[301] :333:GETTABLEKS     v6 = v7.Parent
+[303] :333:GETTABLEKS     v5 = v6.Parent
+[305] :333:GETTABLEKS     v4 = v5.Sacrifice
+[307] :333:GETTABLEKS     v3 = v4.OpenSac
+[309] :333:GETTABLEKS     v2 = v3.Value
+[310] :333:NOT            v1 = not v2
+[312] :333:SETTABLEKS     v0.Value = v1
+[314] :334:GETIMPORT      v4 = script
+[316] :334:GETTABLEKS     v3 = v4.Parent
+[318] :334:GETTABLEKS     v2 = v3.Parent
+[320] :334:GETTABLEKS     v1 = v2.Sacrifice
+[322] :334:GETTABLEKS     v0 = v1.EntireFrame
+[324] :334:GETIMPORT      v1 = UDim2.fromScale
+[325] :334:LOADN          v2 = 0
+[326] :334:LOADK          v3 = -0.1
+[327] :334:CALL           v1 = v1(v2, v3)
+[329] :334:SETTABLEKS     v0.Position = v1
+[331] :335:GETIMPORT      v4 = script
+[333] :335:GETTABLEKS     v3 = v4.Parent
+[335] :335:GETTABLEKS     v2 = v3.Parent
+[337] :335:GETTABLEKS     v1 = v2.Sacrifice
+[339] :335:GETTABLEKS     v0 = v1.EntireFrame
+[341] :335:GETIMPORT      v2 = UDim2.fromScale
+[342] :335:LOADN          v3 = 0
+[343] :335:LOADN          v4 = 0
+[344] :335:CALL           v2 = v2(v3, v4)
+[345] :335:LOADK          v3 = "Out"
+[346] :335:LOADK          v4 = "Quart"
+[347] :335:LOADN          v5 = 0
+[348] :335:LOADB          v6 = true
+[351] :335:CALL           v0:TweenPosition(v2, v3, v4, v5, v6)
+[353] :336:GETIMPORT      v4 = script
+[355] :336:GETTABLEKS     v3 = v4.Parent
+[357] :336:GETTABLEKS     v2 = v3.Parent
+[359] :336:GETTABLEKS     v1 = v2.Sacrifice
+[361] :336:GETTABLEKS     v0 = v1.EntireFrame
+[363] :336:GETIMPORT      v7 = script
+[365] :336:GETTABLEKS     v6 = v7.Parent
+[367] :336:GETTABLEKS     v5 = v6.Parent
+[369] :336:GETTABLEKS     v4 = v5.Sacrifice
+[371] :336:GETTABLEKS     v3 = v4.EntireFrame
+[373] :336:GETTABLEKS     v2 = v3.Visible
+[374] :336:NOT            v1 = not v2
+[376] :336:SETTABLEKS     v0.Visible = v1
+[377] :337:RETURN         return
+end
+[311] :567:CALL           v11:Connect(v13)
+[313] :595:GETIMPORT      v11 = pairs
+[315] :595:GETIMPORT      v13 = script
+[317] :595:GETTABLEKS     v12 = v13.Parent
+[320] :595:CALL           ... = v12:GetChildren()
+[321] :595:CALL           v11, v12, v13 = v11(...)
+[322] :595:FORGPREP_NEXT  for v14, v15 in pairs(v12) do -- could be doing next, t
+[323] :596:LOADK          v18 = "TextButton"
+[326] :596:CALL           v16 = v16:IsA(v18)
+[327] :596:JUMPIF         if not v16 then -- goto #337
+[328] :596:LOADK          v18 = "Frame"
+[331] :596:CALL           v16 = v16:IsA(v18)
+[332] :596:JUMPIF         if not v16 then -- goto #337
+[333] :596:LOADK          v18 = "ImageButton"
+[336] :596:CALL           v16 = v16:IsA(v18)
+end
+end
+[337] :596:JUMPIFNOT      if v16 then -- goto #345
+[338] :597:LOADK          v18 = "Visible"
+[341] :597:CALL           v16 = v16:GetPropertyChangedSignal(v18)
+[342] :597:DUPCLOSURE     v18 = function()
+-- proto pool id: 39
+-- num upvalues: 0
+-- num inner protos: 0
+-- size instructions: 39
+-- size constants: 15
+-- lineinfo gap: 24
+-- max stack size: 5
+-- is typed: false
+[002] :342:GETIMPORT      v2 = game
+[004] :342:GETTABLEKS     v1 = v2.ReplicatedStorage
+[006] :342:GETTABLEKS     v0 = v1.RemoteEvent
+[007] :342:LOADK          v2 = "Check"
+[010] :342:CALL           v0 = v0:FindFirstChild(v2)
+[011] :342:JUMPIF         if not v0 then -- goto #21
+[013] :343:GETIMPORT      v2 = game
+[015] :343:GETTABLEKS     v1 = v2.Players
+[017] :343:GETTABLEKS     v0 = v1.LocalPlayer
+[018] :343:LOADK          v2 = "Exploit suspected."
+[021] :343:CALL           v0:Kick(v2)
+[023] :345:GETIMPORT      v3 = game
+[025] :345:GETTABLEKS     v2 = v3.ReplicatedStorage
+[027] :345:GETTABLEKS     v1 = v2.RemoteEvent
+[029] :345:GETTABLEKS     v0 = v1.Check
+[031] :345:GETIMPORT      v4 = script
+[033] :345:GETTABLEKS     v3 = v4.Parent
+[035] :345:GETTABLEKS     v2 = v3.CanbeOpen
+[038] :345:CALL           v0:FireServer(v2)
+[039] :346:RETURN         return
+end
+[345] :597:CALL           v16:Connect(v18)
+[347] :595:FORGLOOP       end -- iterate + jump to #323
+[349] :606:GETIMPORT      v15 = game
+[351] :606:GETTABLEKS     v14 = v15.ReplicatedStorage
+[353] :606:GETTABLEKS     v13 = v14.RemoteEvent
+[355] :606:GETTABLEKS     v12 = v13.Check
+[357] :606:GETTABLEKS     v11 = v12.OnClientEvent
+[358] :606:DUPCLOSURE     v13 = function(p9)
+-- proto pool id: 40
+-- num upvalues: 0
+-- num inner protos: 0
+-- size instructions: 33
+-- size constants: 11
+-- lineinfo gap: 24
+-- max stack size: 9
+-- is typed: false
+[001] :351:JUMPIF         if not p9 then -- goto #32
+[003] :352:GETIMPORT      v0 = pairs
+[005] :352:GETIMPORT      v2 = script
+[007] :352:GETTABLEKS     v1 = v2.Parent
+[010] :352:CALL           ... = v1:GetChildren()
+[011] :352:CALL           v0, v1, v2 = v0(...)
+[012] :352:FORGPREP_NEXT  for v3, v4 in pairs(v1) do -- could be doing next, t
+[013] :353:LOADK          v7 = "TextButton"
+[016] :353:CALL           v5 = v5:IsA(v7)
+[017] :353:JUMPIF         if not v5 then -- goto #27
+[018] :353:LOADK          v7 = "Frame"
+[021] :353:CALL           v5 = v5:IsA(v7)
+[022] :353:JUMPIF         if not v5 then -- goto #27
+[023] :353:LOADK          v7 = "ImageButton"
+[026] :353:CALL           v5 = v5:IsA(v7)
+end
+end
+[027] :353:JUMPIFNOT      if v5 then -- goto #30
+[028] :354:LOADB          v5 = false
+[030] :354:SETTABLEKS     v4.Visible = v5
+[032] :352:FORGLOOP       end -- iterate + jump to #13
+[033] :358:RETURN         return
+end
+[361] :606:CALL           v11:Connect(v13)
+[363] :615:RETURN         return
